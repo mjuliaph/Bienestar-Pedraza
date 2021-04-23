@@ -1,0 +1,35 @@
+/*GRILLA INDEX*/
+
+#grillaIndex{
+	display: grid;
+	grid-template-areas:
+	"header header"
+	"main aside"
+	"main noticias"
+	"nosotros nosotros"
+	"footer footer"
+	;
+grid-template-columns: 80% 20%;
+grid-column-gap: 5px;
+grid-template-rows: 10% auto auto 15% 10%;
+grid-row-gap: 15px;
+}
+
+header{
+	grid-area: header;
+}
+main{
+	grid-area: main;
+}
+aside{
+	grid-area: aside;
+}
+#noticias{
+	grid-area: noticias;
+}
+#nosotros{
+	grid-area: nosotros;
+}
+footer{
+	grid-area: footer;
+}

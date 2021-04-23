@@ -1,0 +1,25 @@
+
+header{
+	grid-area: header;
+	width: 100vw;
+}
+main{
+	grid-area: main;
+	width: auto;
+}
+aside{
+	grid-area: aside;
+	width: auto;
+}
+#noticias{
+	grid-area: noticias;
+	width: auto;
+}
+#nosotros{
+	grid-area: nosotros;
+	width: 100vw;
+}
+footer{
+	grid-area: footer;
+	width: 100vw;
+}

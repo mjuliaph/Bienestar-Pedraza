@@ -1,0 +1,298 @@
+/*CLASES COMUNES A TODAS LAS SECCIONES*/
+
+#gridSecciones{
+	display: grid;
+	grid-template-areas:
+	"header main"
+	"footer aside"
+	"footer final"
+	;
+	grid-template-columns: 20% 80%;
+	grid-column-gap: 15px;
+	grid-template-rows: 50% auto 1fr;
+	grid-row-gap: 25px;
+	justify-items: center;
+}
+
+.final{
+	grid-area: final;
+}
+
+
+.headerSecciones{
+	width: 100%;
+	background-color: $colorVerde;
+	justify-self: start;
+	align-items: stretch;
+
+	color: $colorVioleta;
+		h1{
+			font-family: $font-am;
+			font-weight: $font-am-bold;
+			font-size: 2.25rem;
+			text-align: center;
+			margin-top: 1em;
+		}
+}
+
+.containerSecciones{
+	margin-top: 1em;
+	&.conBorde{
+		border-right: 2px solid $colorNegro;		
+	}
+
+	#navSecciones {
+		height: 110px;
+		width: 100%;
+		font-size: $grande;
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: space-between;
+		align-items: center;
+
+		.logoSecciones img{
+			display: inline-block;
+			width: 150px;
+			align-items: center;
+		}
+
+		.botonera{
+			width: 33%;
+			font-family: $font-am;
+			font-weight: $font-am-regular;
+			display: flex;
+			flex-flow: row wrap;
+			justify-content: space-around;
+			font-size: $mediano;
+			list-style: none;
+			div{
+				display: flex;
+				flex-direction: column;
+				&:hover{
+					font-family: $font-am;
+					font-weight: $font-am-bold;
+				}
+				img{
+					width: 60px;
+					height: 60px;
+
+				}	
+			}
+		}
+	}
+}
+
+.nosCentrado{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.asideSecciones{
+	width: 100%;
+	background-color: $colorRosa;
+		.elementosAside{
+			display: flex;
+			flex-flow: row wrap;
+			justify-content: space-evenly;
+			h3{
+				margin: 0;
+			}
+				img{
+					margin: 0;
+					height: 100px;
+					width: 100px;
+					display:flex;
+					align-self: center;
+				}
+		}
+}
+
+
+
+/*SECCIÓN ENTRENAMIENTO*/
+
+
+.mainEntrena{
+	width: 100%;
+	padding:1em;
+	text-align: justify;
+}
+
+@mixin botones {
+	width: 300px; 
+	height:100px;
+	background-color: transparent;
+}
+
+
+.botFuerza{
+	@include botones;
+	border: 2px solid $colorVerde;
+}
+.botCardio{
+	@include botones;
+	border: 2px solid $colorBlue;
+}
+.botElonga{
+	@include botones;
+	border: 2px solid $colorRosa;
+}
+.botAdultos{
+	@include botones;
+	border: 2px solid $colorRojo;
+}
+.listadoEntrena{
+	width: 100%;
+	ul{
+		list-style: none;
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: space-around;
+	}
+	a{
+		text-decoration: none;
+		color: $colorVioleta;
+	}
+}
+
+
+
+.divFotosEntrena{
+	width: 280px;
+	height: 420px;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+
+	img{
+		display: block;
+		height: 100%;
+		object-fit: cover;
+		object-position: center center;
+		overflow: hidden;
+
+	}
+}	
+
+
+
+
+/*SECCIÓN ALIMENTACIÓN*/
+
+.mainAlimenta{
+	padding:1em;
+	text-align: justify;
+}
+
+
+.botNutGral{
+	@include botones;
+	border: 2px solid $colorVerde;
+}
+.botNutDepo{
+	@include botones;
+	border: 2px solid $colorBlue;
+}
+.botNutCel{
+	@include botones;
+	border: 2px solid $colorRosa;
+}
+.botNutVege{
+	@include botones;
+	border: 2px solid $colorRojo;
+}
+.botNutVega{
+	@include botones;
+	border: 2px solid $colorVerde;
+}
+.botRecetas{
+	@include botones;
+	border: 2px solid $colorBlue;
+}
+.botMasaCorp{
+	@include botones;
+	border: 2px solid $colorRosa;
+}
+
+
+.listadoAlimentacion{
+	width: 100%;
+	margin-bottom: 1em;
+	ul{
+		list-style: none;
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: space-evenly;
+		margin-bottom: 1em;
+	}
+	a{
+		text-decoration: none;
+		color: $colorVioleta;
+	}
+}
+
+
+
+/*SECCIÓN NOTICIAS*/
+
+.bodyNoticias{
+	color: $colorNegro;
+}
+.imagenNoticias{
+	margin-top: 20px;
+	height: 200px;
+	width: 300px;
+}
+
+.noticiasExtendidas{
+		padding: 1.75em;
+	h2{
+		text-align:center;
+	}
+	p{
+		font-family: $font-wo;
+		font-size: $font-wo-thin;
+		font-size: $pequeño;
+		color: $colorNegro;
+
+		text-align: justify;
+		line-height: 1.6;
+	}
+}

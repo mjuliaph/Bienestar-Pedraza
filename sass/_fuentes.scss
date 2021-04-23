@@ -1,0 +1,46 @@
+body{
+	font-family: $font-wo;
+	font-weight: $font-wo-regular;	
+}
+
+$mapa:("light":200, "regular":400, "bold":600);
+
+
+
+.typeAmReg{
+	font-family: $font-am;
+	font-weight: $font-am-regular;
+}
+.typeAmBl{
+	font-family: $font-am;
+	font-weight: $font-am-bold;
+}
+.tipeOsLi{
+	font-family: $font-os;
+	font-weight: $font-os-light;
+}
+.typeOsRe{
+	font-family: $font-os;
+	font-weight: $font-os-regular;
+}
+.typeOsBl{
+	font-family: $font-os;
+	font-weight: $font-os-bold;	
+}
+.typeWoTi{
+	font-family: $font-wo;
+	font-weight: $font-wo-thin;
+}
+.typeWoRe{
+	font-family: $font-wo;
+	font-weight: $font-wo-regular;	
+}
+.tipeWoBl{
+	font-family: $font-wo;
+	font-weight: $font-wo-bold;	
+}
+
+
+
+
+

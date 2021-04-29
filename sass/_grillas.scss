@@ -9,7 +9,7 @@
 	"nosotros nosotros"
 	"footer footer"
 	;
-grid-template-columns: 80% 20%;
+grid-template-columns: 80% auto;
 grid-column-gap: 5px;
 grid-template-rows: auto auto auto auto auto;
 grid-row-gap: 15px;
@@ -32,4 +32,25 @@ aside{
 }
 footer{
 	grid-area: footer;
+}
+
+/*GRILLA SECCIONES*/
+
+#gridSecciones{
+	display: grid;
+	grid-template-areas:
+	"header main"
+	"footer aside"
+	"footer piePagina"
+	;
+	grid-template-columns: 10% auto;
+	grid-column-gap: 15px;
+	grid-template-rows: 50% auto 1fr;
+	grid-row-gap: 25px;
+	justify-items: center;
+}
+
+.piePagina{
+	grid-area: piePagina;
+
 }

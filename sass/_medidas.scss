@@ -1,25 +1,31 @@
 
 header{
 	grid-area: header;
-	width: 100vw;
+	width: auto;
+	height: auto;
 }
 main{
 	grid-area: main;
 	width: auto;
+	height: auto;
 }
 aside{
 	grid-area: aside;
 	width: auto;
+	height: auto;
 }
 #noticias{
 	grid-area: noticias;
 	width: auto;
+	height: auto;
 }
 #nosotros{
 	grid-area: nosotros;
-	width: 100vw;
+	width: auto;
+	height: auto;
 }
 footer{
 	grid-area: footer;
-	width: 100vw;
+	width: auto;
+	height: auto;
 }

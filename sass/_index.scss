@@ -81,6 +81,9 @@
 	align-items: center;
 
 }
+
+/*CARRUSELES*/
+
 .carousel-item {
 	margin: 2em 0 5em 0;
 	min-height: 300px;
@@ -88,6 +91,16 @@
 	background-size: cover;
 }	
 
+/*OPINIONES*/
+
+
+#carouselExampleCaptions{
+
+		background-color: #3CEFAB;
+	.carousel-item{
+	overflow: hidden;
+	}	
+} 
 
 
 
@@ -200,7 +213,6 @@ aside{
 		margin-bottom: 1em;
 	}
 	img{
-		margin-top: 20px;
 		height: 100px;
 		width: 100px;
 		display:flex;
@@ -258,9 +270,7 @@ aside{
 		}
 }
 
-.opiniones{
-	height: 350px;
-}
+
 
 /*FOOTER INDEX*/
 
@@ -287,14 +297,12 @@ footer{
 
 }
 
-.carruselOpinion{
-	height: auto;
-	margin-top: 20px;
 
-	.bgOpiniones{
-		background-color: $colorVerde;
-	}
-}
+
+
+
+
+
 
 
 h2{

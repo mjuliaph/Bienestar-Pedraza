@@ -1,29 +1,8 @@
-/*CLASES COMUNES A TODAS LAS SECCIONES*/
-
-#gridSecciones{
-	display: grid;
-	grid-template-areas:
-	"header main"
-	"footer aside"
-	"footer final"
-	;
-	grid-template-columns: 20% 80%;
-	grid-column-gap: 15px;
-	grid-template-rows: 50% auto 1fr;
-	grid-row-gap: 25px;
-	justify-items: center;
-}
-
-.final{
-	grid-area: final;
-}
-
+/*HEADER DE LAS SECCIONES*/
 
 .headerSecciones{
 	width: 100%;
-	background-color: $colorVerde;
-	justify-self: start;
-	align-items: stretch;
+	height: 100%;
 
 	color: $colorVioleta;
 		h1{
@@ -36,33 +15,42 @@
 }
 
 .containerSecciones{
-	margin-top: 1em;
-	&.conBorde{
+	margin-top: 2em;
+	position: sticky;
+	top: 2em;
+
+	&.conBordeSec{
 		border-right: 2px solid $colorNegro;		
 	}
 
 	#navSecciones {
-		height: 110px;
+		height: 100%;
 		width: 100%;
-		font-size: $grande;
+		font-size: $mediano;
 		display: flex;
-		flex-flow: row wrap;
-		justify-content: space-between;
-		align-items: center;
+		flex-direction: column;
+		justify-content: center;
+		align-items: space-evenly;
 
-		.logoSecciones img{
-			display: inline-block;
-			width: 150px;
-			align-items: center;
+		.logoSecciones{ 
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+			img{
+				width: 85px;
+			}
 		}
 
-		.botonera{
-			width: 33%;
+		.botoneraSecciones{
+			height: 300px;
 			font-family: $font-am;
 			font-weight: $font-am-regular;
 			display: flex;
-			flex-flow: row wrap;
-			justify-content: space-around;
+			flex-direction: column;
+			align-items: center;
+			justify-content: space-evenly;
 			font-size: $mediano;
 			list-style: none;
 			div{
@@ -89,44 +77,141 @@
 
 }
 
+/*MAIN DE LAS SECCIONES*/
+
+.bannerSecciones{
+	width: 100%;
+	height: 300px;
+	background-color: $colorVerde;
+	h3{
+		text-align: center;
+	}
+}
+
+.listadoSecciones{
+	width: 100%;
+	margin-top: 2em;
+	ul{
+		margin-bottom: 1em;		
+		list-style: none;
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: space-evenly;
+		align-items: space-evenly;
+	}
+	a{
+		text-decoration: none;
+		color: $colorVioleta;
+	}
+}
+
+.bot1{
+	@include botones;
+	border: 2px solid $colorVerde;
+	&:hover{
+		background-color: $colorVerde;
+		a{
+			color: $colorBlanco;
+		}
+	}
+}
+.bot2{
+	@include botones;
+	border: 2px solid $colorBlue;
+	&:hover{
+		background-color: $colorBlue;
+		a{
+			color: $colorBlanco;
+		}
+	}
+}
+.bot3{
+	@include botones;
+	border: 2px solid $colorRosa;
+	&:hover{
+		background-color: $colorRosa;
+		a{
+			color: $colorBlanco;
+		}
+	}
+}
+.bot4{
+	@include botones;
+	border: 2px solid $colorRojo;
+	&:hover{
+		background-color: $colorRojo;
+		a{
+			color: $colorBlanco;
+		}
+	}
+}
+.bot5{
+	@include botones;
+	border: 2px solid $colorVerde;
+	&:hover{
+		background-color: $colorVerde;
+		a{
+			color: $colorBlanco;
+		}
+	}
+}
+.bot6{
+	@include botones;
+	border: 2px solid $colorBlue;
+	&:hover{
+		background-color: $colorBlue;
+		a{
+			color: $colorBlanco;
+		}
+	}
+}
+.bot7{
+	@include botones;
+	border: 2px solid $colorRosa;
+	&:hover{
+		background-color: $colorRosa;
+		a{
+			color: $colorBlanco;
+		}
+	}
+}
+.bot8{
+	@include botones;
+	border: 2px solid $colorBlue;
+	&:hover{
+		background-color: $colorBlue;
+		a{
+			color: $colorBlanco;
+		}
+	}
+}
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.imagenesSecciones{
+	width: 100%;
+	margin-top: 2em;
+	margin-bottom: 1em;		
+	list-style: none;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-evenly;
+	align-items: space-evenly;
+		img{
+			width: 250px; 
+			height:350px;
+			object-fit: cover;
+			object-position: center center;
+			overflow: hidden;
+			border-radius: 5px 5px 5px 5px;
+		}
+}
 
 
 
 .asideSecciones{
 	width: 100%;
-	background-color: $colorRosa;
+	height: 100%;
+	background-color: $colorRosaClaro;
 		.elementosAside{
 			display: flex;
 			flex-flow: row wrap;
@@ -144,6 +229,21 @@
 		}
 }
 
+.footerSecciones{
+	width: 100%;
+	height: 100%;
+	background-color: $colorBlue;
+	margin-top: 0px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-evenly;
+}
+
+
+
+
+
 
 
 /*SECCIÓN ENTRENAMIENTO*/
@@ -155,61 +255,10 @@
 	text-align: justify;
 }
 
-@mixin botones {
-	width: 300px; 
-	height:100px;
-	background-color: transparent;
-}
-
-
-.botFuerza{
-	@include botones;
-	border: 2px solid $colorVerde;
-}
-.botCardio{
-	@include botones;
-	border: 2px solid $colorBlue;
-}
-.botElonga{
-	@include botones;
-	border: 2px solid $colorRosa;
-}
-.botAdultos{
-	@include botones;
-	border: 2px solid $colorRojo;
-}
-.listadoEntrena{
-	width: 100%;
-	ul{
-		list-style: none;
-		display: flex;
-		flex-flow: row wrap;
-		justify-content: space-around;
-	}
-	a{
-		text-decoration: none;
-		color: $colorVioleta;
-	}
-}
 
 
 
-.divFotosEntrena{
-	width: 280px;
-	height: 420px;
-	display: flex;
-	flex-flow: row wrap;
-	justify-content: space-around;
 
-	img{
-		display: block;
-		height: 100%;
-		object-fit: cover;
-		object-position: center center;
-		overflow: hidden;
-
-	}
-}	
 
 
 
@@ -222,51 +271,7 @@
 }
 
 
-.botNutGral{
-	@include botones;
-	border: 2px solid $colorVerde;
-}
-.botNutDepo{
-	@include botones;
-	border: 2px solid $colorBlue;
-}
-.botNutCel{
-	@include botones;
-	border: 2px solid $colorRosa;
-}
-.botNutVege{
-	@include botones;
-	border: 2px solid $colorRojo;
-}
-.botNutVega{
-	@include botones;
-	border: 2px solid $colorVerde;
-}
-.botRecetas{
-	@include botones;
-	border: 2px solid $colorBlue;
-}
-.botMasaCorp{
-	@include botones;
-	border: 2px solid $colorRosa;
-}
 
-
-.listadoAlimentacion{
-	width: 100%;
-	margin-bottom: 1em;
-	ul{
-		list-style: none;
-		display: flex;
-		flex-flow: row wrap;
-		justify-content: space-evenly;
-		margin-bottom: 1em;
-	}
-	a{
-		text-decoration: none;
-		color: $colorVioleta;
-	}
-}
 
 
 
@@ -295,4 +300,31 @@
 		text-align: justify;
 		line-height: 1.6;
 	}
+}
+
+
+.piePagina{
+	width: 100%;
+	height: 250px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+
+	.logoCircular img{
+			margin-top: -90px;
+			width: 150px;	
+		}
+
+	.redesSociales{
+		display: flex;
+		flex-direction: column;
+		justify-content: space-evenly;
+		img {
+			width: 30px;
+			margin-bottom: 1em;
+			margin-right: 2em;
+		}		
+	}
+
+
 }

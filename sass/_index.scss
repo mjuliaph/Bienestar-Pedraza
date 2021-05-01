@@ -82,6 +82,13 @@
 
 }
 
+.navbar-collapse{
+	font-family: $font-am;
+	font-weight: $font-am-bold;
+	font-size: $mediano;
+}	
+
+
 /*CARRUSELES*/
 
 
@@ -330,4 +337,44 @@ h3{
 	text-align: center;
 	margin-top: 0.5em;
 	margin-bottom: 1em;
+}
+
+
+.card-img-top{
+	border: 1px solid $colorRojo;
+	border-radius: 5px 5px 5px 5px;
+
+
+}
+.card-body{
+	font-family: $font-wo;
+	font-weight: $font-wo-regular;
+	font-size: $pequeño;
+	text-align: justify;	
+	h5{
+		font-size:$grande;
+		text-align: center;
+	}
+	a{
+		background-color: $colorBlanco;
+		color: $colorRojo;
+		border: 1px solid $colorRojo;
+		&:hover{
+			background-color: $colorRojo;
+			color: $colorBlanco;
+			border: 1px solid $colorBlanco;
+		}
+	}
+
+}
+
+.botonNoticias{
+	background-color: $colorRojo;
+	color: $colorBlanco;
+	border: 1px solid $colorBlanco;
+	&:hover{
+		background-color: $colorBlanco;
+		color: $colorRojo;
+		border: 1px solid $colorRojo;
+	}
 }

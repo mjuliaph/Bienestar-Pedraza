@@ -1,4 +1,3 @@
-
 @each $nombre, $valor in $mapa{
 	.type-#{$nombre}{
 	font-weight: $valor;		

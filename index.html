@@ -7,6 +7,7 @@
 	<meta name="description" content="Página dedicada a la salud física y mental. Para que te cuides tanto por dentro como por fuera.">
 	<meta name="keywords" content="fit, ejercicios, cardiovasculares, elongación, adultos, mayores, alimentacion, celiaquía, vegetariano, vegano, belleza, salud">
 
+	<link rel="icon" type="image/png" href="media.logop.png" sizes="32x32">
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 	<link rel="stylesheet" type="text/css" href="css/estilos.css">
@@ -24,15 +25,57 @@
 			<img src="iconos/youtube.png" alt="youtube">
 		</div>
 
-		<div class="container conBorde">
+
+<!--NAVBAR-->
+
+		<div id="navIndex" class="container border-bottom border-dark">
+			<div class="row no-gutters">
+				<div class="col-12 m-1">
+					<nav class="navbar navbar-expand-lg navbar-light d-flex justify-content-between">
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"><img src="media/menu.png" width="60" height="60"  
+						>
+					</button>
+						<div class="collapse navbar-collapse" id="navbarNav">
+							<ul class="navbar-nav col-md-3 col-lg-4 d-flex justify-content-md-around ustify-content-lg-around">
+								<li class="nav-item">
+									<a class="nav-link" href="#contenido"><img src="iconos/secciones.png" width="60" height="60" class="d-none d-lg-block mx-2" alt="secciones" loading="lazy">Secciones</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#noticias"><img src="iconos/noticias.png" width="60" height="60" class="d-none d-lg-block" alt="noticias" loading="lazy">Noticias</a>
+								</li>
+							</ul>
+
+							<a class="navbar-brand col-md-3 col-lg-4 d-flex justify-content-center" href="index.html">
+								<img src="media/logo.jpg" width="200" height="100"  alt="logo" loading="lazy">
+							</a>
+
+							<ul class="navbar-nav col-md-3 col-lg-4 d-flex justify-content-md-around ustify-content-lg-around">
+								<li class="nav-item">
+									<a class="nav-link" href="#nosotros"><img src="iconos/nosotros.png" width="60" height="60" class="d-none d-lg-block mx-4" alt="Nosotros" loading="lazy">Sobre nosotros</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#contacto"><img src="iconos/contacto.png" width="60" height="60" class="d-none d-lg-block mx-1" alt="secciones" loading="lazy">Contacto</a>
+								</li>
+							</ul>
+						</div>
+					</nav>			
+				</div>		
+			</div>
+		</div>		
+
+
+
+<!--NAVBAR VIEJO DE MUESTRA...
+
+<div class="container conBorde">
 			<nav id="navIndex">
 				<div class="botonera">
 					<div>
-						<a href="#contenido"><img src="iconos/secciones.png" alt="secciones"></a>
+						<a href=""><img src="iconos/secciones.png" alt="secciones"></a>
 						<p>Secciones</p>
 					</div>
 					<div>
-						<a href="#noticias"><img src="iconos/noticias.png" alt="noticias"></a>
+						<a href="#"><img src="iconos/noticias.png" alt="noticias"></a>
 						<p>Noticias</p>
 					</div>
 				</div>
@@ -44,23 +87,25 @@
 
 				<div class="botonera">
 					<div class="nosCentrado">
-						<a href="#nosotros"><img src="iconos/nosotros.png" alt="nosotros"></a>
+						<a href="#"><img src="iconos/nosotros.png" alt="nosotros"></a>
 						<p>Sobre nosotros</p>
 					</div>
 					<div>
-						<a href="#contacto" ><img src="iconos/contacto.png" alt="contacto"></a>
+						<a href="#" ><img src="iconos/contacto.png" alt="contacto"></a>
 						<p>Contacto</p>				
 					</div>
 				</div>
 			</nav>				
 		</div>
 
+-->
+
 		<div>
 			<h1>Estar bien es una cuestión de actitud...</h1>
 		</div>
 
-<!--EMPIEZA BANER -->
 
+<!--EMPIEZA BANER -->
 <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
 	<div class="carousel-inner">
 		<div class="carousel-item active">
@@ -93,70 +138,79 @@
 		</div>
 	</div>
 </div>
-
-
 <!--TERMINA BANER -->
-	</header>
+</header>
 
-	<main id="contenido">		
-		<h2> El cambio comienza por uno! </h2>
-		<section class="contenedorSecciones">
-			<div class="wow animate__animated animate__backInLeft">
-				<a href="entrenamiento.html"><img src="media/entrenamiento.png" alt="entrenamiento"></a>
-			</div>
-			<div class="parrafoSecciones">
-					<h3 class="margenes">Mejora la condición física con ejercicios diarios:</h3>
-					<ul>
-						<li><a href="#fuerza"><i class="fas fa-dumbbell colorVerde"></i>Ejercicios de Fuerza</a></li>
-						<li><a href="#cardio"><i class="fas fa-dumbbell colorVerde"></i>Ejercicios Cardiovasculares</a></li>
-						<li><a href="#elonga"><i class="fas fa-dumbbell colorVerde"></i>Ejercicios de elongación</a></li>
-						<li><a href="#adultos"><i class="fas fa-dumbbell colorVerde"></i>Ejercicios para adultos mayores</a></li>
-						</ul>	
-			</div>
-		</section> 
-		<section class="contenedorSeccionesInversa">
-			<div class="wow animate__animated animate__backInRight">
-				<a href="alimentacion.html"><img src="media/keto.jpg" alt="alimentacion"></a>
-			</div>	
-			<div class="parrafoSecciones">
-				<h3>Encontrá todo sobre alimentación:</h3>
-				<ul>
-					<li><a href="#general"><i class="fas fa-apple-alt colorRojo"></i>Nutición General.</a></li>
-					<li><a href="#celiaca"><i class="fas fa-apple-alt colorRojo"></i>Nutrición Celíaca.</a></li>
-					<li><a href="#vegetariana"><i class="fas fa-apple-alt colorRojo"></i>Nutrición Vegetariana y Vegana.</a></li>
-					<li><a href="#recetas"><i class="fas fa-apple-alt colorRojo"></i>Recetas y mucho más!</a></li>
-				</ul>			
-			</div>
-		</section>
-		<section class="contenedorSecciones">
-			<div class="wow animate__animated animate__backInLeft">
-				<a href="belleza.html"><img src="media/belleza.jpg" alt="corporal"></a>
-			</div>
-			<div class="parrafoSecciones">
-				<h3>Encontrá acá las mejores rutinas de belleza y cuidado personal:</h3>
-				<ul>
-				    <li><i class="fas fa-mortar-pestle colorBlue"></i>Rutinas faciales.</li>
-				    <li><i class="fas fa-mortar-pestle colorBlue"></i>Rutinas corporales.</li>
-				    <li><i class="fas fa-mortar-pestle colorBlue"></i>Técnicas de auto-masajes.</li>
-				    <li><i class="fas fa-mortar-pestle colorBlue"></i>Cuidados para el pelo, y mucho mas!</li>
-				</ul>
-			</div>
-		</section>
-		<section class="contenedorSeccionesInversa">
-			<div class="wow animate__animated animate__backInRight">
-				<a href="salud.html"><img src="media/salud.jpg" alt="salud"></a>
-			</div>
-			<div class="parrafoSecciones">
-				<h3>La salud es lo primero!</h3>
-				<ul>
-				    <li><i class="fas fa-heartbeat colorVioleta"></i>Medicina tradicional.</li>
-				    <li><i class="fas fa-heartbeat colorVioleta"></i>Medicina oriental.</li>
-				    <li><i class="fas fa-heartbeat colorVioleta"></i>Terapias Homeopáticas.</li>
-				    <li><i class="fas fa-heartbeat colorVioleta"></i>Terapias holísticas.</li>
-				</ul>
-			</div>
-		</section>
-	</main>
+<!--Acá comienza el contenido principal-->
+
+<main id="contenido">		
+	
+	<h2> El cambio comienza por uno! </h2>
+
+
+	<section class="contenedorSecciones">
+		<div class="wow animate__animated animate__backInLeft">
+			<a href="entrenamiento.html"><img src="media/entrenamiento.png" alt="entrenamiento"></a>
+		</div>
+		<div class="parrafoSecciones">
+			<h3 class="margenes">Mejora la condición física con ejercicios diarios:</h3>
+			<ul>
+				<li><a href="#fuerza"><i class="fas fa-dumbbell colorVerde"></i>Ejercicios de Fuerza</a></li>
+				<li><a href="#cardio"><i class="fas fa-dumbbell colorVerde"></i>Ejercicios Cardiovasculares</a></li>
+				<li><a href="#elonga"><i class="fas fa-dumbbell colorVerde"></i>Ejercicios de elongación</a></li>
+				<li><a href="#adultos"><i class="fas fa-dumbbell colorVerde"></i>Ejercicios para adultos mayores</a></li>
+			</ul>	
+		</div>
+	</section> 
+
+	<section class="contenedorSeccionesInversa">
+		<div class="wow animate__animated animate__backInRight">
+			<a href="alimentacion.html"><img src="media/keto.jpg" alt="alimentacion"></a>
+		</div>	
+		<div class="parrafoSecciones">
+			<h3>Encontrá todo sobre alimentación:</h3>
+			<ul>
+				<li><a href="#general"><i class="fas fa-apple-alt colorRojo"></i>Nutición General.</a></li>
+				<li><a href="#celiaca"><i class="fas fa-apple-alt colorRojo"></i>Nutrición Celíaca.</a></li>
+				<li><a href="#vegetariana"><i class="fas fa-apple-alt colorRojo"></i>Nutrición Vegetariana y Vegana.</a></li>
+				<li><a href="#recetas"><i class="fas fa-apple-alt colorRojo"></i>Recetas y mucho más!</a></li>
+			</ul>			
+		</div>
+	</section>
+
+	<section class="contenedorSecciones">
+		<div class="wow animate__animated animate__backInLeft">
+			<a href="belleza.html"><img src="media/belleza.jpg" alt="corporal"></a>
+		</div>
+		<div class="parrafoSecciones">
+			<h3>Encontrá acá las mejores rutinas de belleza y cuidado personal:</h3>
+			<ul>
+				<li><i class="fas fa-mortar-pestle colorBlue"></i>Rutinas faciales.</li>
+				<li><i class="fas fa-mortar-pestle colorBlue"></i>Rutinas corporales.</li>
+				<li><i class="fas fa-mortar-pestle colorBlue"></i>Técnicas de auto-masajes.</li>
+				<li><i class="fas fa-mortar-pestle colorBlue"></i>Cuidados para el pelo, y mucho mas!</li>
+			</ul>
+		</div>
+	</section>
+
+	<section class="contenedorSeccionesInversa">
+		<div class="wow animate__animated animate__backInRight">
+			<a href="salud.html"><img src="media/salud.jpg" alt="salud"></a>
+		</div>
+		<div class="parrafoSecciones">
+			<h3>La salud es lo primero!</h3>
+			<ul>
+				<li><i class="fas fa-heartbeat colorVioleta"></i>Medicina tradicional.</li>
+				<li><i class="fas fa-heartbeat colorVioleta"></i>Medicina oriental.</li>
+				<li><i class="fas fa-heartbeat colorVioleta"></i>Terapias Homeopáticas.</li>
+				<li><i class="fas fa-heartbeat colorVioleta"></i>Terapias holísticas.</li>
+			</ul>
+		</div>
+	</section>
+
+</main>
+
+
 
 	<aside>
 		<h3>No te lo pierdas..</h3>
@@ -175,28 +229,28 @@
 		</div>
 	</aside>
 
+<!--Inicio de Noticias-->
 	<section id="noticias">
+		<div class="d-none d-sm-none d-md-block">
+			<h3>Noticias</h3>
+			<img src="media/neuro2.jpg" class="card-img-top" alt="neuro">
+			<div class="card-body mb-5">
+				<h5 class="card-title">Card title</h5>
+				<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+				<a class="btn d-flex justify-content-center" href="noticias-extend.html#noticiaNeuro" role="button">Mirá la nota completa</a>
+			</div>
+		</div>
 
-	<h3>Noticias</h3>
+		<div class="d-none d-sm-none d-md-block">
+			<img src="media/tabaco.jpg" class="card-img-top" alt="tabaco">
+			<div class="card-body">
+				<h5 class="card-title">Card title</h5>
+				<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+				<a class="btn d-flex justify-content-center" href="noticias-extend.html#noticiaTabaco" role="button">Mirá la nota completa</a>
+			</div>
+		</div>
 
-<div class="d-none d-sm-none d-md-block">
-	<img src="media/neuro2.jpg" class="card-img-top" alt="neuro">
-	<div class="card-body">
-		<h5 class="card-title">Card title</h5>
-		<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-		<a class="btn btn-primary d-flex justify-content-center" href="noticias-extend.html#noticiaNeuro" role="button">Mirá la nota completa</a>
-	</div>
-</div>
-
-<div class="d-none d-sm-none d-md-block">
-	<img src="media/tabaco.jpg" class="card-img-top" alt="tabaco">
-	<div class="card-body">
-		<h5 class="card-title">Card title</h5>
-		<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-		<a class="btn btn-primary d-flex justify-content-center" href="noticias-extend.html#noticiaTabaco" role="button">Mirá la nota completa</a>
-	</div>
-</div>
-
+		<a class="btn d-flex justify-content-center botonNoticias mt-4" href="noticias-extend.html" role="button">Mirá todas las Noticias</a>
 	</section>
 	
 

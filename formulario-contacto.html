@@ -13,43 +13,36 @@
 
 </head>
 
-<body>
+<body id="gridSecciones">
 
-	<header class="headerIndex">
-
-		<div class="container-fluid divRedes">
-			<img src="iconos/facebook.png" alt="facebook">
-			<img src="iconos/twitter.png" alt="twitter">
-			<img src="iconos/instagram.png" alt="instagram">
-			<img src="iconos/youtube.png" alt="youtube">
-		</div>
-
-		<div class="container conBorde">
-			<nav id="navIndex">
-				<div class="botonera">
+	<header class="headerSecciones">
+ 
+		<div class="containerSecciones conBordeSec">
+			<nav id="navSecciones">
+				<div class="botoneraSecciones">
 					<div>
 						<a href="index.html"><img src="iconos/secciones.png" alt="secciones"></a>
-						<p class="botones">Secciones</p>
+						<p>Secciones</p>
 					</div>
 					<div>
 						<a href="#noticias"><img src="iconos/noticias.png" alt="noticias"></a>
-						<p class="botones">Noticias</p>
+						<p>Noticias</p>
 					</div>
 				</div>
 
-				<div class="logo">
+				<div class="logoSecciones">
 					<a href="index.html">
-					<img src="media/logo2.jpg" alt="logo"></a>
+					<img src="media/logo-sec.jpg" alt="logo"></a>
 				</div>
 
-				<div class="botonera">
+				<div class="botoneraSecciones">
 					<div class="nosCentrado">
 						<a href="#nosotros"><img src="iconos/nosotros.png" alt="nosotros"></a>
-						<p class="botones">Sobre nosotros</p>
+						<p>Sobre nosotros</p>
 					</div>
 					<div>
 						<a href="#contacto" ><img src="iconos/contacto.png" alt="contacto"></a>
-						<p class="botones">Contacto</p>				
+						<p>Contacto</p>				
 					</div>
 				</div>
 			</nav>				
@@ -119,36 +112,43 @@
 			</form>
 			</div>
 		</div>
-		<aside class="asideSecciones bgBlue">
-				<div class="imagenAsideSecciones">
-					<div>
-						<h3>ENTRENAMIENTO</h3>
-						<a href="entrenamiento.html">
-						<img src="media/entrenamiento.png"></a>
-					</div>
-					<div>
-						<h3>ALIMENTACIÓN</h3>
-						<a href="alimentacion.html">
-						<img src="media/alimentacion.jpg"></a>
-					</div>
-					<div>
-						<h3>CUIDADO CORPORAL</h3>
-						<a href="cuidado-corporal.html">
-						<img src="media/belleza.jpg"></a>
-					</div>
-					<div>
-						<h3>SALUD</h3>
-						<a href="salud.html">
-						<img src="media/salud.jpg"></a>
-					</div>
-					<div>
-						<h3>TIPS</h3>
-						<a href="tips.html">
-						<img src="media/tips.jpg"></a>
-					</div>
-				</div>
-			</aside>
 	</div>
+
+	<aside class="asideSecciones">
+		<div class="elementosAside">
+			<div>
+				<h3>ENTRENAMIENTO</h3>
+				<p>Breve descripción</p>
+				<a href="entrenamiento.html">
+				<img src="media/entrena.jpg"></a>
+			</div>
+			<div>
+				<h3>CUIDADO CORPORAL</h3>
+				<p>Breve descripción</p>
+				<a href="cuidado-corporal.html">
+				<img src="media/cuiperindex.jpg"></a>
+			</div>
+			<div>
+				<h3>SALUD</h3>
+				<p>Breve descripción</p>
+				<a href="salud.html">
+				<img src="media/saludindex.jpg"></a>
+			</div>
+			<div>
+				<h3>TIPS</h3>
+				<p>Breve descripción</p>
+				<a href="tips.html">
+				<img src="media/tips.jpg"></a>
+			</div>
+			<div>
+				<h3>FORMULARIO DE CONTACTO</h3>
+				<p>Breve descripción</p>
+				<a href="formulario-contacto.html">
+				<img src="media/formulario.jpg"></a>
+			</div>
+		</div>
+	</aside>
+
 
 
 	
@@ -193,25 +193,27 @@
 	</div>-->
 
 	
-	<div>
-		<a href="index.html">Volver al Home</a>
-	</div>
-
-	
-	<footer>
+	<footer class="footerSecciones">
 		<!--Acá van los datos de contacto y redes sociales-->
 		<div id="contacto">Contacto
 			<p>Ácá van los datos de contacto.</p></div>
-		<div><a href="formulario-contacto.html" class="volverArriba"><i class="fas fa-angle-double-up"></i></a></div>
+		<div><a href="alimentacion.html" class="volverArriba"><i class="fas fa-angle-double-up"></i></a></div>
+
+	</footer>
+
+
+	<div class="piePagina">
+		<a href="index.html">Volver al Home</a>
+		<div class="logoCircular">
+			<img src="media/logo-circular.png" alt="">
+		</div>
 		<div class="redesSociales">
-			<p>Seguinos en redes!</p>
 			<img src="media/facebook.png" alt="facebook">
 			<img src="media/gorjeo.png" alt="twitter">
 			<img src="media/instagram.png" alt="instagram">
 		</div>
-	</footer>
-
-
+	</div>
+	
 
 	<script src="js/wow.min.js"></script>
 	<script>new WOW().init();</script>

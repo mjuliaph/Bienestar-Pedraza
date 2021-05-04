@@ -401,3 +401,113 @@
 
 }
 
+
+/*MEDIA QUERIES DE SECCIONES*/
+
+@media all and (max-width: 768px){
+	.containerSecciones{
+		margin-top: 0.5em;
+		display: block;
+		
+		&.conBordeSec{
+			border-right: none;
+			border-bottom: 1px solid $colorNegro;		
+		}
+
+		#navSecciones {
+			height: 100%;
+			width: 100%;
+			font-size: $pequeño;
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
+			align-items: center;
+
+			.logoSecciones{ 
+			width: 30%;
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
+			align-items: center;
+				img{
+					width: 50px;
+				}
+			}
+
+			.botoneraSecciones{
+				width: 100%;
+				height: 100px;
+				font-family: $font-am;
+				font-weight: $font-am-regular;
+				display: flex;
+				flex-direction: row;
+				align-items: end;
+				justify-content: space-evenly;
+				font-size: $pequeño;
+				list-style: none;
+				div{
+					display: flex;
+					flex-direction: column;
+					&:hover{
+						font-family: $font-am;
+						font-weight: $font-am-bold;
+					}
+					img{
+						width: 40px;
+						height: 40px;
+
+					}	
+				}
+			}
+		}
+	}
+
+	.mainSecciones{
+		background-color: $colorBeige;
+		font-size: 0.75rem;
+		margin: 0.5px 0;
+	}
+	.bloqueSecciones{
+		margin: 0;
+		padding: 0;
+		display: flex;
+		flex-direction: column;
+			img{
+			width: 300px; 
+			height:450px;
+			object-fit: cover;
+			object-position: center center;
+			overflow: hidden;
+			border-radius: 5px 5px 5px 5px;
+			}			
+			p{
+				text-align: justify;
+				line-height: 1.6;
+			}
+
+	}
+	.tituloSecciones1{
+		background-image: url("../media/fideo.jpg");
+		background-size: cover;
+		height: 100px;
+		width: 100%;
+		color: $colorBlanco;
+		line-height: 3;
+
+	}
+	.tituloSecciones2{
+		background-image: url("../media/tomate.jpg");
+		background-size: cover;
+		height: 100px;
+		width: 100%;
+		color: $colorBlanco;
+		line-height: 3;
+
+	}
+	.table-bordered{
+			font-size: 9px;
+		td{
+			background-color: $colorBlanco;
+		}
+	}
+}

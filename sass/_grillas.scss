@@ -45,7 +45,7 @@ footer{
 	;
 	grid-template-columns: 10% auto;
 	grid-column-gap: 15px;
-	grid-template-rows: 50% auto 1fr;
+	grid-template-rows: auto auto 1fr;
 	grid-row-gap: 25px;
 	justify-items: center;
 }
@@ -53,4 +53,25 @@ footer{
 .piePagina{
 	grid-area: piePagina;
 
+}
+
+@media all and (max-width: 768px){
+	#gridSecciones{
+	display: grid;
+	grid-template-areas:
+	"header"
+	"main"
+	"piePagina"
+	"footer"
+	;
+	grid-template-columns: auto;
+	grid-template-rows: auto auto auto auto;
+	grid-row-gap: 10px;
+	justify-items: center;
+}
+
+.piePagina{
+	grid-area: piePagina;
+
+}
 }

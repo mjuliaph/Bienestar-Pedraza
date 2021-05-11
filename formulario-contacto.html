@@ -25,7 +25,7 @@
 						<p>Secciones</p>
 					</div>
 					<div>
-						<a href="#noticias"><img src="iconos/noticias.png" alt="noticias"></a>
+						<a href="noticias-extend.html"><img src="iconos/noticias.png" alt="noticias"></a>
 						<p>Noticias</p>
 					</div>
 				</div>
@@ -37,7 +37,7 @@
 
 				<div class="botoneraSecciones">
 					<div class="nosCentrado">
-						<a href="#nosotros"><img src="iconos/nosotros.png" alt="nosotros"></a>
+						<a href="index.html#nosotros"><img src="iconos/nosotros.png" alt="nosotros"></a>
 						<p>Sobre nosotros</p>
 					</div>
 					<div>
@@ -50,10 +50,17 @@
 
 	</header>
 
-	<div class="flexDeSeccion">
-		<div class="cuerpoSecciones">
-			<h3>Formulario de Contacto</h3>
-			<div class="container m-5 col-12">
+<main class="mainSecciones seccionFormulario">
+
+	<div class="bannerFormulario">
+		<h3>Formulario de Contacto</h3>
+	</div>
+	
+
+	<div class="container">
+		<div class="row">
+	
+			<div class="col-12">
 			<form>
 				<div class="form-group">
 					<label for="formGroupExampleInput">Nombre:</label>
@@ -107,14 +114,17 @@
 						<label class="form-check-label" for="gridCheck">¿Querés recibir nuestro Newsletter?</label>
 					</div>
 				</div>
-				<button type="reset" class="btn btn-info">Limpiar datos</button>
-			  	<button type="submit" class="btn btn-success">Enviar Formulario</button>
+				<div class="form-group d-flex justify-content-center">
+					<button type="reset" class="btn botonLimpiar">Limpiar datos</button>
+				  	<button type="submit" class="btn botonEnviar">Enviar Formulario</button>
+				</div>
 			</form>
 			</div>
 		</div>
 	</div>
+</main>
 
-	<aside class="asideSecciones">
+	<aside class="asideSecciones d-none d-md-block">
 		<div class="elementosAside">
 			<div>
 				<h3>ENTRENAMIENTO</h3>
@@ -203,17 +213,21 @@
 
 
 	<div class="piePagina">
-		<a href="index.html">Volver al Home</a>
-		<div class="logoCircular">
-			<img src="media/logo-circular.png" alt="">
+		<div class="piePaginaImagenes">
+			<a href="index.html">Volver al Home</a>
+			
+			<div class="logoCircular">
+				<img src="media/logo-circular.png" class="d-none d-md-block" alt="">
+			</div>
+			<div class="redesSociales">
+				<img src="media/facebook.png" alt="facebook">
+				<img src="media/gorjeo.png" alt="twitter">
+				<img src="media/instagram.png" alt="instagram">
+			</div>
 		</div>
-		<div class="redesSociales">
-			<img src="media/facebook.png" alt="facebook">
-			<img src="media/gorjeo.png" alt="twitter">
-			<img src="media/instagram.png" alt="instagram">
-		</div>
+		
+		<p>Copyright © 2021 Julia Pedraza. Todos los derechos reservados.</p>
 	</div>
-	
 
 	<script src="js/wow.min.js"></script>
 	<script>new WOW().init();</script>

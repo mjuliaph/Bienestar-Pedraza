@@ -3,7 +3,6 @@
 .headerSecciones{
 	width: 100%;
 	height: 100%;
-
 	color: $colorVioleta;
 		h1{
 			font-family: $font-am;
@@ -15,9 +14,9 @@
 }
 
 .containerSecciones{
-	margin-top: 2em;
+	margin-top: 1em;
 	position: sticky;
-	top: 2em;
+	top: 1em;
 
 	&.conBordeSec{
 		border-right: 2px solid $colorNegro;		
@@ -44,6 +43,7 @@
 		}
 
 		.botoneraSecciones{
+			margin-top: 1em;
 			height: 300px;
 			font-family: $font-am;
 			font-weight: $font-am-regular;
@@ -59,6 +59,9 @@
 				&:hover{
 					font-family: $font-am;
 					font-weight: $font-am-bold;
+				}
+				a{
+					text-align: center;
 				}
 				img{
 					width: 60px;
@@ -77,22 +80,26 @@
 
 }
 
-/*MAIN DE LAS SECCIONES*/
+/*BANNER DE LAS SECCIONES*/
 
-.bannerSecciones{
-	margin-top: 1em;
-	background-image: url("../media/alibanner.jpg");
-	width: 100%;
-	height: 300px;
-	object-fit: cover;
-	object-position: center center;
-	overflow: hidden;
-	h3{
-		color: $colorBlanco;
-		font-size: $muy-grande;
-		line-height: 4;
-	}
+.bannerEntrenamiento{
+	@include bannerSecciones;
+	background-image: url(../media/bannerEntre.jpg);
 }
+
+.bannerAlimentacion{
+	@include bannerSecciones;
+	background-image: url("../media/alibanner.jpg");
+}
+
+.bannerFormulario{
+	@include bannerSecciones;
+	background-color: $colorBlue;
+
+}
+
+
+
 
 .introSecciones{
 	margin: 1em 2em;
@@ -104,9 +111,7 @@
 
 .listadoSecciones{
 	width: 100%;
-	margin-top: 2em;
 	ul{
-		margin-bottom: 1em;		
 		list-style: none;
 		display: flex;
 		flex-flow: row wrap;
@@ -131,6 +136,16 @@
 }
 .bot2{
 	@include botones;
+	border: 2px solid $colorRojo;
+	&:hover{
+		background-color: $colorRojo;
+		a{
+			color: $colorBlanco;
+		}
+	}
+}
+.bot3{
+	@include botones;
 	border: 2px solid $colorBlue;
 	&:hover{
 		background-color: $colorBlue;
@@ -139,21 +154,11 @@
 		}
 	}
 }
-.bot3{
+.bot4{
 	@include botones;
 	border: 2px solid $colorRosa;
 	&:hover{
 		background-color: $colorRosa;
-		a{
-			color: $colorBlanco;
-		}
-	}
-}
-.bot4{
-	@include botones;
-	border: 2px solid $colorRojo;
-	&:hover{
-		background-color: $colorRojo;
 		a{
 			color: $colorBlanco;
 		}
@@ -171,6 +176,16 @@
 }
 .bot6{
 	@include botones;
+	border: 2px solid $colorRojo;
+	&:hover{
+		background-color: $colorRojo;
+		a{
+			color: $colorBlanco;
+		}
+	}
+}
+.bot7{
+	@include botones;
 	border: 2px solid $colorBlue;
 	&:hover{
 		background-color: $colorBlue;
@@ -179,7 +194,7 @@
 		}
 	}
 }
-.bot7{
+.bot8{
 	@include botones;
 	border: 2px solid $colorRosa;
 	&:hover{
@@ -189,27 +204,20 @@
 		}
 	}
 }
-.bot8{
-	@include botones;
-	border: 2px solid $colorBlue;
-	&:hover{
-		background-color: $colorBlue;
-		a{
-			color: $colorBlanco;
-		}
-	}
-}
-
 
 .tituloSecciones1{
-	margin: 3em 0;
+	margin: 2em 0;
+	text-shadow: 1px 1px 1px #840296;
+}
+.tituloSecciones2{
+	margin: 2em 0;
+	text-shadow: 1px 1px 1px #840296;
+}
+.tituloSecciones3{
+	margin: 2em 0;
 	text-shadow: 1px 1px 1px #840296;
 }
 
-.tituloSecciones2{
-	margin: 3em 0;
-	text-shadow: 1px 1px 1px #840296;
-}
 
 .bloqueSecciones{
 	margin: 1em;
@@ -237,7 +245,7 @@
 
 .asideSecciones{
 	width: 100%;
-	height: 100%;
+	height: 300px;
 	background-color: $colorRosaClaro;
 		.elementosAside{
 			display: flex;
@@ -270,12 +278,11 @@
 
 
 
-
-
-
 .mainSecciones{
+	margin: 0;
+	padding: 0;
+	background-color: $colorBeige;
 	width: 100%;
-	padding:1em;
 	text-align: justify;
 }
 
@@ -313,10 +320,12 @@
 	}
 }
 
+/*PIE DE PÁGINA*/
 
 .piePagina{
 	width: 100%;
 	height: 250px;
+	.piePaginaImagenes{
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
@@ -336,7 +345,12 @@
 			margin-right: 2em;
 		}		
 	}
+	}
 
+	p{
+		font-size: 10px;
+		text-align: center;
+	}
 
 }
 
@@ -401,113 +415,15 @@
 
 }
 
+/*
+#ejerciciosFuerza{
+	
+}*/
 
-/*MEDIA QUERIES DE SECCIONES*/
-
-@media all and (max-width: 768px){
-	.containerSecciones{
-		margin-top: 0.5em;
-		display: block;
-		
-		&.conBordeSec{
-			border-right: none;
-			border-bottom: 1px solid $colorNegro;		
-		}
-
-		#navSecciones {
-			height: 100%;
-			width: 100%;
-			font-size: $pequeño;
-			display: flex;
-			flex-direction: row;
-			justify-content: center;
-			align-items: center;
-
-			.logoSecciones{ 
-			width: 30%;
-			display: flex;
-			flex-direction: row;
-			justify-content: center;
-			align-items: center;
-				img{
-					width: 50px;
-				}
-			}
-
-			.botoneraSecciones{
-				width: 100%;
-				height: 100px;
-				font-family: $font-am;
-				font-weight: $font-am-regular;
-				display: flex;
-				flex-direction: row;
-				align-items: end;
-				justify-content: space-evenly;
-				font-size: $pequeño;
-				list-style: none;
-				div{
-					display: flex;
-					flex-direction: column;
-					&:hover{
-						font-family: $font-am;
-						font-weight: $font-am-bold;
-					}
-					img{
-						width: 40px;
-						height: 40px;
-
-					}	
-				}
-			}
-		}
-	}
-
-	.mainSecciones{
-		background-color: $colorBeige;
-		font-size: 0.75rem;
-		margin: 0.5px 0;
-	}
-	.bloqueSecciones{
-		margin: 0;
-		padding: 0;
-		display: flex;
-		flex-direction: column;
-			img{
-			width: 300px; 
-			height:450px;
-			object-fit: cover;
-			object-position: center center;
-			overflow: hidden;
-			border-radius: 5px 5px 5px 5px;
-			}			
-			p{
-				text-align: justify;
-				line-height: 1.6;
-			}
-
-	}
-	.tituloSecciones1{
-		background-image: url("../media/fideo.jpg");
-		background-size: cover;
-		height: 100px;
-		width: 100%;
-		color: $colorBlanco;
-		line-height: 3;
-
-	}
-	.tituloSecciones2{
-		background-image: url("../media/tomate.jpg");
-		background-size: cover;
-		height: 100px;
-		width: 100%;
-		color: $colorBlanco;
-		line-height: 3;
-
-	}
-	.table-bordered{
-			font-size: 9px;
-		td{
-			background-color: $colorBlanco;
-		}
-	}
+.volverFixed{
+	position: fixed;
+	z-index: 100;
+	right: 0;
+	bottom: 0;
+	font-size: 1.75rem;
 }

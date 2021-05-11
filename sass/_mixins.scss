@@ -20,6 +20,19 @@
 	}
 }
 
+@mixin bannerTitulos{
+	margin: 2em 0;
+	text-shadow: 1px 1px 1px #840296;
+}
+
+@mixin bannerTitulosSm{
+	background-size: cover;
+	height: 100px;
+	width: 100%;
+	color: $colorBlanco;
+	line-height: 3;
+}
+
 @mixin SeccionesIndex{
 	width: 80%;
 	height: $alto-foto-g;

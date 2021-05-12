@@ -4,6 +4,9 @@
 	width: 100%;
 	height: 100%;
 	color: $colorVioleta;
+	&.conBordeSec{
+		border-right: 2px solid $colorNegro;		
+	}
 		h1{
 			font-family: $font-am;
 			font-weight: $font-am-bold;
@@ -18,9 +21,6 @@
 	position: sticky;
 	top: 1em;
 
-	&.conBordeSec{
-		border-right: 2px solid $colorNegro;		
-	}
 
 	#navSecciones {
 		height: 100%;
@@ -218,6 +218,9 @@
 }
 
 
+
+
+
 .bloqueSecciones{
 	margin: 1em;
 	padding: 1em;
@@ -268,14 +271,41 @@
 
 .footerSecciones{
 	width: 100%;
-	height: auto;
-	background-color: $colorBlue;
+	height: 100%;
+	background-color: $colorCeleste;
 	margin-top: 0px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	justify-content: space-evenly;
+	justify-content: space-around;
+		&.conBorde{
+		border-right: 2px solid $colorNegro;		
+	}
+		img{
+			display: block;
+			margin: 0 2.75em;
+			margin-top: 1em;
+			margin-bottom: 1em;
+			width: 30px;
+		}
+		p{
+			text-align: center;
+			font-size: 0.75rem;
+		}
+		button{
+			font-size: $font-am;
+			font-weight: $font-am-bold;
+			padding: 0.25em 0.5em;
+			margin-left: 0.25em;
+			background-color: $colorBlanco;
+			border: 2px solid $colorRosa;
+			a{
+				text-decoration: none;
+				color: $colorRosa;
+			}
+		}
 }
+
 
 
 
@@ -290,6 +320,23 @@
 
 
 
+
+/*SECCION ENTRENAMIENTO*/
+
+.contenedorFuerza{
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+		li{
+			list-style: none;
+			line-height: 4;
+		}
+		a{
+			text-decoration: none;
+			color: $colorVioleta;
+		}
+}
 
 
 
@@ -322,7 +369,15 @@
 	}
 }
 
-/*PIE DE PÁGINA*/
+/*PIE DE PÁGINA Y ZÓCALO*/
+
+.volverFixed{
+	position: fixed;
+	z-index: 100;
+	right: 0;
+	bottom: 0;
+	font-size: 1.75rem;
+}
 
 .piePagina{
 	width: 100%;
@@ -330,23 +385,13 @@
 	.piePaginaImagenes{
 	display: flex;
 	flex-direction: row;
-	justify-content: space-between;
+	justify-content: center;
+	align-items: flex-end;
 
 	.logoCircular img{
-			margin-top: -90px;
+			margin-top: -68px;
 			width: 150px;	
 		}
-
-	.redesSociales{
-		display: flex;
-		flex-direction: column;
-		justify-content: space-evenly;
-		img {
-			width: 30px;
-			margin-bottom: 1em;
-			margin-right: 2em;
-		}		
-	}
 	}
 
 	p{
@@ -356,6 +401,29 @@
 
 }
 
+.zocalo{
+	padding: 1em;
+	background-color: $colorRosaClaro;
+	height: 3em;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font-size: 0.75rem;
+		a{
+			text-decoration: none;
+			color: $colorGris;
+			margin-left: 1em;
+		}
+		p{
+			margin-top: 1.5em;
+			color: $colorGris;
+		}
+		img {
+			width: 15px;
+			height: 15px;
+			margin: 15px 10px;
+		}
+}
 
 
 /*.fotoSec.n1{
@@ -422,10 +490,3 @@
 	
 }*/
 
-.volverFixed{
-	position: fixed;
-	z-index: 100;
-	right: 0;
-	bottom: 0;
-	font-size: 1.75rem;
-}

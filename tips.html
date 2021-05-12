@@ -15,9 +15,9 @@
 
 <body id="gridSecciones">
 
-	<header class="headerSecciones">
+	<header class="headerSecciones conBordeSec">
  
-		<div class="containerSecciones conBordeSec">
+		<div class="containerSecciones">
 			<nav id="navSecciones">
 				<div class="botoneraSecciones">
 					<div>
@@ -58,45 +58,50 @@
 		<p>Lorem, ipsum, dolor sit amet consectetur adipisicing elit. Maxime ea ullam sed quisquam vitae aspernatur. Itaque possimus, qui, aliquam nihil aperiam doloribus voluptate, voluptatem ipsum accusantium hic quasi dolore suscipit.</p>
 	</div>
 
-	<aside class="asideSecciones">
+	<aside class="asideSecciones d-none d-md-block">
 		<div class="elementosAside">
 			<div>
 				<h3>ENTRENAMIENTO</h3>
-				<p>Breve descripción</p>
 				<a href="entrenamiento.html">
-				<img src="media/entrena.jpg"></a>
+				<img src="media/entrenamiento.png"></a>
 			</div>
 			<div>
-				<h3>ALIMENTACIÓN</h3>
-				<p>Breve descripción</p>
+				<h3>ALIMENTACION</h3>
 				<a href="alimentacion.html">
-				<img src="media/alimentaindex.jpg"></a>
+				<img src="media/alimentacion.jpg"></a>
 			</div>
 			<div>
-				<h3>CUIDADO CORPORAL</h3>
-				<p>Breve descripción</p>
-				<a href="cuidado-corporal.html">
-				<img src="media/cuiperindex.jpg"></a>
+				<h3>BELLEZA</h3>
+				<a href="belleza.html">
+				<img src="media/belleza.jpg"></a>
 			</div>
 			<div>
 				<h3>SALUD</h3>
-				<p>Breve descripción</p>
 				<a href="salud.html">
-				<img src="media/saludindex.jpg"></a>
+				<img src="media/salud.jpg"></a>
 			</div>
 			<div>
 				<h3>FORMULARIO DE CONTACTO</h3>
-				<p>Breve descripción</p>
 				<a href="formulario-contacto.html">
 				<img src="media/formulario.jpg"></a>
 			</div>
 		</div>
 	</aside>
 	
-	<footer class="footerSecciones">
-		<!--Acá van los datos de contacto y redes sociales-->
-		<div id="contacto">Contacto
-			<p>Ácá van los datos de contacto.</p></div>
+	<footer id="contacto" class="footerSecciones conBorde">
+		<div>
+			<img src="iconos/posicion.png" alt="locacion">
+			<p>Encontranos en:</p>
+			<p>Avda. Santa Fe 1200</p>
+			<p>CABA, Argentina</p>
+		</div>
+		<div>
+			<img src="iconos/formcont.png" alt="formulario contacto">
+			<p>También podés</p>
+			<p>enviarnos tus</p>
+			<p>opiniones...</p>
+			<button> <a href="formulario-contacto.html">Escribinos!</a></button>
+		</div>
 	</footer>
 
 	<div class="volverFixed">
@@ -104,18 +109,27 @@
 	</div>
 
 	<div class="piePagina">
-		<a href="index.html">Volver al Home</a>
-		<div class="logoCircular">
-			<img src="media/logo-circular.png" alt="">
-		</div>
-		<div class="redesSociales">
-			<img src="media/facebook.png" alt="facebook">
-			<img src="media/gorjeo.png" alt="twitter">
-			<img src="media/instagram.png" alt="instagram">
+		<div class="piePaginaImagenes">
+			<div class="logoCircular">
+				<img src="media/logo-circular.png" class="d-none d-md-block" alt="">
+			</div>
 		</div>
 	</div>
-
-
+		
+	<div class="zocalo">
+		<div>
+			<a href="index.html">Volver al Home</a>
+		</div>
+		<div>
+			<p>Copyright © 2021 Julia Pedraza - Todos los derechos reservados</p>
+		</div>
+		<div>
+			<img src="iconos/facebook.png" alt="facebook">
+			<img src="iconos/twitter.png" alt="twitter">
+			<img src="iconos/instagram.png" alt="instagram">
+			<img src="iconos/youtube.png" alt="youtube">
+		</div>
+	</div>
 
 	<script src="js/wow.min.js"></script>
 	<script>new WOW().init();</script>

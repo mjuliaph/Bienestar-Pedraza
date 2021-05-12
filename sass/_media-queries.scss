@@ -243,18 +243,24 @@
 	.tituloSecciones1.ali{
 		@include bannerTitulosSm;
 		background-image: url("../media/fideo.jpg");
-
 	}
 	.tituloSecciones2.ali{
 		@include bannerTitulosSm;
 		background-image: url("../media/tomate.jpg");
-
-
 	}
-		.tituloSecciones3.ali{
+	.tituloSecciones3.ali{
 		@include bannerTitulosSm;
 		background-image: url("../media/fideo2.jpg");
 	}
+	.tituloSecciones1.eje{
+		@include bannerTitulosSm;
+		background-image: url("../media/eje1.jpg");
+	}
+	.tituloSecciones2.eje{
+		@include bannerTitulosSm;
+		background-image: url("../media/eje2.jpg");
+	}
+
 	.table-bordered{
 			font-size: 9px;
 		td{

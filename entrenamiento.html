@@ -15,9 +15,9 @@
 
 <body id="gridSecciones">
 
-	<header class="headerSecciones">
+	<header class="headerSecciones conBordeSec">
  
-		<div class="containerSecciones conBordeSec">
+		<div class="containerSecciones">
 			<nav id="navSecciones">
 				<div class="botoneraSecciones">
 					<div>
@@ -82,39 +82,39 @@
 		</section>
 		
 		<section id="ejerciciosFuerza">
-<div>
-				<h3 id="fuerza" class="tituloSecciones1">Ejercicios de Fuerza</h3>
-</div>
-			<article>
-				<p>Lorem, ipsum, dolor sit amet consectetur adipisicing elit. Maxime ea ullam sed quisquam vitae aspernatur. Itaque possimus, qui, aliquam nihil aperiam doloribus voluptate, voluptatem ipsum accusantium hic quasi dolore suscipit.</p>
-				<div class="bloqueSecciones">
-					
-
-<div>
-	<img src="media/1.jpg" class="wow animate__animated animate__flipInX d-none d-md-block" alt="pesas">
-</div>
-
-
-			
-			<ul>
-						<li>
-							<h4><a href="#trensup">Tren superior</a></h4>
-							<ul>
-								<li><a href="#brazos">Brazos</a></li>
-								<li><a href="#espalda">Espalda</a></li>
-								<li><a href="#pecho">Pecho</a></li>
-								<li><a href="#abdominales">Abdominales</a></li>
-							</ul>
-						</li>
-						<li>
-							<h4><a href="#treninf">Tren inferior</a></h4>
-							<ul>
-								<li><a href="#piernas">Piernas</a></li>
-								<li><a href="#gluteos">Gluteos</a></li>
-							</ul>
-						</li>
+		
+		<div>
+			<h3 id="fuerza" class="tituloSecciones1 eje">Ejercicios de Fuerza</h3>
+		</div>
+	
+		<article>
+		<p>Lorem, ipsum, dolor sit amet consectetur adipisicing elit. Maxime ea ullam sed quisquam vitae aspernatur. Itaque possimus, qui, aliquam nihil aperiam doloribus voluptate, voluptatem ipsum accusantium hic quasi dolore suscipit.</p>
+		
+		<div class="bloqueSecciones">
+			<ul class="contenedorFuerza">
+				<li>
+					<button class="bot1"><a href="#trensup">Tren Superior</a></button>
+					<ul>
+						<li><a href="#brazos">Brazos</a></li>
+						<li><a href="#espalda">Espalda</a></li>
+						<li><a href="#pecho">Pecho</a></li>
+						<li><a href="#abdominales">Abdominales</a></li>
 					</ul>
-				</div>
+				</li>
+			</ul>
+			<div>
+				<img src="media/1.jpg" class="wow animate__animated animate__flipInX d-none d-md-block" alt="pesas">
+			</div>
+			<ul class="contenedorFuerza">
+				<li>
+					<button class="bot2"><a href="#treninf">Tren Inferior</a></button>
+					<ul>
+						<li><a href="#piernas">Piernas</a></li>
+						<li><a href="#gluteos">Gluteos</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
 
 				<div>
 					<div>
@@ -155,7 +155,7 @@
 			
 			<article>
 				<div>
-					<h3 id="cardio">Ejercicios Cardiovasculares</h3>
+					<h3 id="cardio" class="tituloSecciones2 eje">Ejercicios Cardiovasculares</h3>
 				</div>
 
 				<div class="bloqueSecciones">
@@ -173,7 +173,7 @@
 
 			<article>
 				<div>
-					<h3 id="elonga">Ejercicios de elongación</h3>
+					<h3 id="elonga" class="tituloSecciones1 eje">Ejercicios de elongación</h3>
 				</div>
 					
 				<div class="bloqueSecciones">
@@ -189,7 +189,7 @@
 
 			<article>
 					<div>
-						<h3 id="adultos">Ejercicios para adultos mayores</h3>
+						<h3 id="adultos" class="tituloSecciones2 eje">Ejercicios para adultos mayores</h3>
 					</div>
 
 				<div class="bloqueSecciones">
@@ -208,32 +208,27 @@
 	<aside class="asideSecciones d-none d-md-block">
 		<div class="elementosAside">
 			<div>
-				<h3>ALIMENTACIÓN</h3>
-				<p>Breve descripción</p>
+				<h3>ALIMENTACION</h3>
 				<a href="alimentacion.html">
-				<img src="media/alimentaindex.jpg"></a>
+				<img src="media/alimentacion.jpg"></a>
 			</div>
 			<div>
-				<h3>CUIDADO CORPORAL</h3>
-				<p>Breve descripción</p>
-				<a href="cuidado-corporal.html">
-				<img src="media/cuiperindex.jpg"></a>
+				<h3>BELLEZA</h3>
+				<a href="belleza.html">
+				<img src="media/belleza.jpg"></a>
 			</div>
 			<div>
 				<h3>SALUD</h3>
-				<p>Breve descripción</p>
 				<a href="salud.html">
-				<img src="media/saludindex.jpg"></a>
+				<img src="media/salud.jpg"></a>
 			</div>
 			<div>
 				<h3>TIPS</h3>
-				<p>Breve descripción</p>
 				<a href="tips.html">
 				<img src="media/tips.jpg"></a>
 			</div>
 			<div>
 				<h3>FORMULARIO DE CONTACTO</h3>
-				<p>Breve descripción</p>
 				<a href="formulario-contacto.html">
 				<img src="media/formulario.jpg"></a>
 			</div>
@@ -241,34 +236,48 @@
 	</aside>
 
 
-	<footer class="footerSecciones">
-		<!--Acá van los datos de contacto y redes sociales-->
-		<div id="contacto">Contacto
-			<p>Ácá van los datos de contacto.</p></div>
+	<footer id="contacto" class="footerSecciones conBorde">
+		<div>
+			<img src="iconos/posicion.png" alt="locacion">
+			<p>Encontranos en:</p>
+			<p>Avda. Santa Fe 1200</p>
+			<p>CABA, Argentina</p>
+		</div>
+		<div>
+			<img src="iconos/formcont.png" alt="formulario contacto">
+			<p>También podés</p>
+			<p>enviarnos tus</p>
+			<p>opiniones...</p>
+			<button> <a href="formulario-contacto.html">Escribinos!</a></button>
+		</div>
 	</footer>
 
 	<div class="volverFixed">
 		<a href="entrenamiento.html" class="volverArriba"><i class="fas fa-angle-double-up"></i></a>
 	</div>
 
-
 	<div class="piePagina">
 		<div class="piePaginaImagenes">
-			<a href="index.html">Volver al Home</a>
-			
 			<div class="logoCircular">
 				<img src="media/logo-circular.png" class="d-none d-md-block" alt="">
 			</div>
-			<div class="redesSociales">
-				<img src="media/facebook.png" alt="facebook">
-				<img src="media/gorjeo.png" alt="twitter">
-				<img src="media/instagram.png" alt="instagram">
-			</div>
 		</div>
-		
-		<p>Copyright © 2021 Julia Pedraza. Todos los derechos reservados.</p>
 	</div>
-
+		
+	<div class="zocalo">
+		<div>
+			<a href="index.html">Volver al Home</a>
+		</div>
+		<div>
+			<p>Copyright © 2021 Julia Pedraza - Todos los derechos reservados</p>
+		</div>
+		<div>
+			<img src="iconos/facebook.png" alt="facebook">
+			<img src="iconos/twitter.png" alt="twitter">
+			<img src="iconos/instagram.png" alt="instagram">
+			<img src="iconos/youtube.png" alt="youtube">
+		</div>
+	</div>
 
 	<script src="js/wow.min.js"></script>
 	<script>new WOW().init();</script>

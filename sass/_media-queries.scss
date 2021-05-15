@@ -299,3 +299,149 @@
 				}
 			}
 	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*INDEX*/
+/*SECCIONES DEL INDEX*/
+
+@media all and (max-width: 1199.98px) and (min-width: 992px){
+.contenedorSecciones{
+	@include seccionesIndexMob;
+	background-color: $colorRosaClaro;
+	border: 1px solid $colorRosa;
+
+ 	img{
+		@include imagenesSeccionesIndexMob;
+		border: 1px solid $colorRosa;
+	}
+	.parrafoSecciones{
+		@include parrafoSeccionesIndexMob;
+		h3{
+		padding: 0.25em;
+		}
+		ul {
+		list-style: none;
+		line-height: 3;
+			a{
+			text-decoration: none;
+			color: #121212;
+			}
+		}
+	}
+}
+
+.contenedorSeccionesInversa{
+	@include seccionesIndexMob;
+	background-color: $colorCeleste;
+	border: 1px solid $colorBlue;
+	
+ 	img{
+		@include imagenesSeccionesIndexMob;
+		border: 1px solid $colorBlue;
+	}
+	.parrafoSecciones{
+		@include parrafoSeccionesIndexMob;
+		h3{
+		padding: 0.25em;
+		}
+		ul {
+		list-style: none;
+		line-height: 3;
+			a{
+			text-decoration: none;
+			color: #121212;
+			}
+	}
+}
+}
+}
+
+@media all and (max-width: 991.98px) and (min-width: 768px){
+.contenedorSecciones{
+	@include seccionesIndexMob;
+	background-color: $colorRosaClaro;
+	border: 1px solid $colorRosa;
+	margin-left: 9em;
+
+ 	img{
+		@include imagenesSeccionesIndexMob;
+		border: 1px solid $colorRosa;
+	}
+	.parrafoSecciones{
+		@include parrafoSeccionesIndexMob;
+		h3 a{
+			text-decoration: none;
+			color: $colorVioleta;
+			font-family: $font-am;
+			font-weight: $font-am-bold;
+			font-size: 1.75rem;
+			text-align: center;
+			padding: 0.5em;
+		}
+		ul {
+		padding-left: 20px;
+		list-style: none;
+		line-height: 4;
+			a{
+			text-decoration: none;
+			color: #121212;
+			}
+		}
+	}
+}
+
+.contenedorSeccionesInversa{
+	@include seccionesIndexMob;
+	background-color: $colorCeleste;
+	border: 1px solid $colorBlue;
+	margin-left: 9em;
+
+ 	img{
+		@include imagenesSeccionesIndexMob;
+		border: 1px solid $colorBlue;
+	}
+	.parrafoSecciones{
+		@include parrafoSeccionesIndexMob;
+		h3 a{
+			text-decoration: none;
+			color: $colorVioleta;
+			font-family: $font-am;
+			font-weight: $font-am-bold;
+			font-size: 1.75rem;
+			text-align: center;
+			padding: 0.5em;
+		}
+		ul {
+		padding-left: 20px;
+		list-style: none;
+		line-height: 4;
+			a{
+			text-decoration: none;
+			color: #121212;
+			}
+		}
+	}
+}
+}

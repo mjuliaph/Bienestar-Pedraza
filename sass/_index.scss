@@ -1,7 +1,7 @@
 /*HEADER INDEX*/
 
 .headerIndex{
-	width: 100vw;
+	width: 100%;
 	color: $colorVioleta;
 		h1{
 			font-family: $font-am;
@@ -97,56 +97,35 @@
 
 
 #carouselExampleSlidesOnly{
-	margin-top: 2.5em;
+	margin: 2.5em 0 3em 0;
+	h5{
+		letter-spacing: 3px;
+	}
 }
 
-/*OPINIONES*/
-
-.opiniones{
-		margin-top: 4em;
-		height: 350px;	
-		background-color: $colorVerde;
-		h5{
-			font-family:$font-wo;
-			font-weight:$font-wo-bold;
-			font-size: $mediano;
-			color: $colorNegro;	
-		}
-		p{
-			font-family:$font-wo;
-			font-weight:$font-wo-thin;
-			font-size: $pequeño;
-			color: $colorNegro;
-		}
-	}
-	
 
 
 /*SECCIONES INDEX*/
-main{
 	
 .contenedorSecciones{
-	@include SeccionesIndex;
+	@include seccionesIndex;
+	background-color: $colorRosaClaro;
+	border: 1px solid $colorRosa;
 
  	img{
-		object-fit: content;
-		background-position: center;
-		background-repeat: no-repeat;
-		overflow: hidden;
-		animation-duration: 1s;
-			&:hover{
-				transform: scale(1.05);
-				box-shadow: 0 0 5px 0 rgba(125,125,125,125);
-			}
+		@include imagenesSeccionesIndex;
+		border: 1px solid $colorRosa;
 	}
 	.parrafoSecciones{
-		border: 2px solid $colorBeige;
-		width: 400px;
-		height: 400px;
-		text-align: justify;
-		font-size: 15px;
-		h3{
-		padding: 15px;
+		@include parrafoSeccionesIndex;
+		h3 a{
+			text-decoration: none;
+			color: $colorVioleta;
+			font-family: $font-am;
+			font-weight: $font-am-bold;
+			font-size: 1.75rem;
+			text-align: center;
+			padding: 0.5em;
 		}
 		ul {
 		padding-left: 20px;
@@ -161,33 +140,25 @@ main{
 }
 
 .contenedorSeccionesInversa{
-	width: 80%;
-	height: $alto-foto-g;
-	margin: 30px;
-	display: flex;
-	flex-flow: row-reverse wrap;
-	justify-content: space-evenly;
-	text-align: center;
+	@include seccionesIndex;
+	background-color: $colorCeleste;
+	border: 1px solid $colorBlue;
+	flex-direction: row-reverse;
 
-	 img{
-		object-fit: content;
-		background-position: center;
-		background-repeat: no-repeat;
-		overflow: hidden;
-		animation-duration: 1s;
-			&:hover{
-				transform: scale(1.05);
-				box-shadow: 0 0 5px 0 rgba(125,125,125,125);
-			}
+ 	img{
+		@include imagenesSeccionesIndex;
+		border: 1px solid $colorBlue;
 	}
 	.parrafoSecciones{
-		border: 2px solid $colorBeige;
-		width: 400px;
-		height: 400px;
-		text-align: justify;
-		font-size: 15px;
-		h3{
-		padding: 15px;
+		@include parrafoSeccionesIndex;
+		h3 a{
+			text-decoration: none;
+			color: $colorVioleta;
+			font-family: $font-am;
+			font-weight: $font-am-bold;
+			font-size: 1.75rem;
+			text-align: center;
+			padding: 0.5em;
 		}
 		ul {
 		padding-left: 20px;
@@ -201,30 +172,35 @@ main{
 	}
 }
 
-}
 
 /*ASIDE INDEX*/
 
 .asideIndex{
-	width: auto;
-	margin-right: 2em;
+	@include barraLateralIndex;
+	background: linear-gradient(rgba(60,239,171,1), rgba(60,239,171,1), rgba(158,153,255,1));
+	
+	h2{
+		margin: 0.25em 0;
+	}
 
 	div {
+		width: 95%;
 		margin-top: 39px;
 		margin-bottom: 30px;
 		padding: 15px 18px;
 		text-align: center;
 		display: flex;
-		flex-flow: column wrap;
+		flex-direction: column;
 		align-items: center;
 	}
 	h3{
+		font-size: $mediano;
 		margin-top: 0.5em;
-		margin-bottom: 1em;
+		margin-bottom: 0.5em;
 	}
 	img{
-		height: 100px;
-		width: 100px;
+		height: 60px;
+		width: 60px;
 		display:flex;
 		align-self: center;
 	}
@@ -234,112 +210,40 @@ main{
 }
 
 .tips{
-	background-color: $colorVerde;
-	border-radius: 50px;
+	background-color: $colorBeige;
+	border-radius: 10px;
+	border: 1px solid $colorVioleta;
 }
 .formulario{
-	background-color: $colorBlue;
-	border-radius: 50px;
+	background-color: $colorBeige;
+	border-radius: 10px;
+	border: 1px solid $colorVioleta;
+	img{
+		margin-left: 0.5em;
+	}
 }
 
+
+
+
+
+
+/*NOTICIAS INDEX*/
 
 #noticias{
-	width: auto;
-	margin-right: 2em;
-	height: 100%;
-}
-
-/*NOSOTROS INDEX*/ 
-
-#nosotros{
-	width: 100vw;
-	h3{
-		text-align: center;
+	@include barraLateralIndex;
+	height: 95.5%;
+	background-color: $colorBeige;
+	border: 1px solid $colorRojo;
+/*	background: linear-gradient(rgba(158,153,255,1), rgba(60,239,171,1), rgba(60,239,171,1));*/
+	img{
+		margin-left: 0.45em;
 	}
-}	
-
-.carac-index{
-	width: 100%;
-	height: 320px;
-	margin: 10px 0;
-	text-align: center;
-	border: 2px solid $colorVerde;
-
-		i{
-			margin-top:0.75em;
-			font-size: $grande;
-		}
-		h3{
-			margin:0.5em;
-			font-size: $grande;
-		}
-		p{
-			padding: 0.5em 0.5em;
-			line-height: 1.6;
-			text-align: justify;
-		}
 }
-
-
-
-/*FOOTER INDEX*/
-
-footer{
-	width: 100%;
-	background-color: $colorRosaClaro;
-	margin-top: 1.6em;
-	font-size: $pequeño;
-	display: flex;
-	flex-flow: row wrap;
-	justify-content: space-between;
-	.volverArriba {
-		font-size:$grande;
-		color: $colorBlue;
-	}
-	p{
-		margin-right: 1em;	
-	}
-	.redesSociales img {
-		width: 30px;
-		margin-bottom: 1em;
-		margin-right: 1em;
-	}
-
-}
-
-
-
-
-
-
-
-
-
-h2{
-	color: $colorVioleta;
-	font-family: $font-am;
-	font-weight: $font-am-bold;
-	font-size: 2rem;
-	text-align: center;
-	margin-top: 0.5em;
-	margin-bottom: 1em;
-}
-
-h3{
-	color: $colorVioleta;
-	font-family: $font-am;
-	font-weight: $font-am-bold;
-	font-size: 1.75rem;
-	text-align: center;
-	margin-top: 0.5em;
-	margin-bottom: 1em;
-}
-
 
 .card-img-top{
 	border: 1px solid $colorRojo;
-	border-radius: 5px 5px 5px 5px;
-
+	width: 95%;
 
 }
 .card-body{
@@ -348,7 +252,10 @@ h3{
 	font-size: $pequeño;
 	text-align: justify;	
 	h5{
-		font-size:$grande;
+		color: $colorVioleta;
+		font-family: $font-am;
+		font-weight: $font-am-bold;
+		font-size:$mediano;
 		text-align: center;
 	}
 	a{
@@ -376,11 +283,139 @@ h3{
 }
 
 
+/*NOSOTROS INDEX*/ 
+
+#nosotros{
+	width: 100%;
+	h3{
+		text-align: center;
+		margin: 2em 0;
+	}
+}	
+
+.carac-index{
+	height: auto;
+	text-align: center;
+	border: 2px solid $colorVerde;
+
+		i{
+			margin-top:0.75em;
+			font-size: $grande;
+		}
+		h5{
+			font-family: $font-am;
+			font-weight: $font-am-bold;
+			margin:0.5em;
+			font-size: $grande;
+		}
+		p{
+			padding: 0.5em 0.5em;
+			line-height: 1.6;
+			text-align: justify;
+		}
+}
+
 #carouselExampleCaptions{
-	height: 300px;
+	margin-top: 5em;
+	height: 350px;
 	.carousel-item{
-		display: flex;
-		flex-direction: column;
-		align-items: center;
+	img{
+		width:200px;
+		height: 200px;
+		border-radius: 5%;
+		border: 2px solid $colorVioleta;
+		margin-top: 3em;
+		filter: opacity(75%);
+	}
+		h5{
+			font-family:$font-os;
+			font-weight:$font-os-bold;
+			font-size: $mediano;
+			color: $colorVioleta;	
+		}
+		p{
+			font-family:$font-os;
+			font-weight:$font-os-light;
+			font-size: $pequeño;
+			color: $colorNegro;
+		}
 	}
 }
+
+
+
+/*FOOTER INDEX*/
+
+footer{
+	width: 100%;
+	background-color: $colorRosaClaro;
+	margin-top: 2em;
+	font-size: $pequeño;
+	display: flex;
+	flex-direction: row ;
+	justify-content: space-between;
+	p{
+		margin-right: 1em;	
+	}
+	.redesSociales img {
+		width: 30px;
+		margin-bottom: 1em;
+		margin-right: 1em;
+	}
+
+}
+
+
+.volverFixed{
+	position: fixed;
+	z-index: 100;
+	right: 0;
+	bottom: 0;
+	font-size: 1.75rem;
+		.volverArriba {
+		font-size:$mediano;
+		color: $colorVioleta;
+	}
+}
+
+
+
+
+
+
+h2{
+	color: $colorVioleta;
+	font-family: $font-am;
+	font-weight: $font-am-bold;
+	font-size: 2rem;
+	text-align: center;
+	margin-top: 0.5em;
+	margin-bottom: 1em;
+}
+
+h3{
+	color: $colorVioleta;
+	font-family: $font-am;
+	font-weight: $font-am-bold;
+	font-size: $grande;
+	text-align: center;
+	margin-top: 0.5em;
+	margin-bottom: 1em;
+}
+
+h4{
+	color: $colorVioleta;
+	font-family: $font-am;
+	font-weight: $font-am-bold;
+	font-size: 1.25rem;
+	text-align: center;
+	margin-top: 0.5em;
+	margin-bottom: 1em;
+}
+
+
+
+
+
+
+

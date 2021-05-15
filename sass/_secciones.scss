@@ -91,12 +91,19 @@
 	@include bannerSecciones;
 	background-image: url("../media/alibanner.jpg");
 }
+.bannerBelleza{
+	@include bannerSecciones;
+	background-image: url("../media/belbanner.jpg");
 
+
+}
 .bannerFormulario{
 	@include bannerSecciones;
 	background-color: $colorBlue;
 
 }
+
+
 
 
 
@@ -482,3 +489,11 @@
 	
 }*/
 
+
+
+ol {
+padding:0 0.5em;
+margin: 0 0.5em;
+list-style-position: inside;
+line-height: 2;
+}

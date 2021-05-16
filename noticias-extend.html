@@ -11,13 +11,10 @@
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 	<link rel="stylesheet" type="text/css" href="css/estilos.css">
-
 </head>
 
-<body id="gridSecciones" class="bodyNoticias">
-
+<body id="gridSecciones">
 	<header class="headerSecciones conBordeSec">
- 
 		<div class="containerSecciones">
 			<nav id="navSecciones">
 				<div class="botoneraSecciones">
@@ -30,12 +27,10 @@
 						<p>Noticias</p>
 					</div>
 				</div>
-
 				<div class="logoSecciones">
 					<a href="index.html">
 					<img src="media/logo-sec.jpg" alt="logo"></a>
 				</div>
-
 				<div class="botoneraSecciones">
 					<div class="nosCentrado">
 						<a href="#nosotros"><img src="iconos/nosotros.png" alt="nosotros"></a>
@@ -48,103 +43,202 @@
 				</div>
 			</nav>				
 		</div>
-
 	</header>
 	
-<main>
+	<main  class="mainSecciones">
+		<div class="bannerNoticias">
+			<h3>NOTICIAS</h3>
+		</div>
 
-<div class="card-columns">
-  <div class="card">
-	<img src="..." class="card-img-top" alt="...">
-	<div class="card-body">
-	  <h5 class="card-title">Card title that wraps to a new line</h5>
-	  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-	</div>
-  </div>
-  <div class="card p-3">
-	<blockquote class="blockquote mb-0 card-body">
-	  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-	  <footer class="blockquote-footer">
-		<small class="text-muted">
-		  Someone famous in <cite title="Source Title">Source Title</cite>
-		</small>
-	  </footer>
-	</blockquote>
-  </div>
-  <div class="card">
-	<img src="..." class="card-img-top" alt="...">
-	<div class="card-body">
-	  <h5 class="card-title">Card title</h5>
-	  <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-	  <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-	</div>
-  </div>
-  <div class="card bg-primary text-white text-center p-3">
-	<blockquote class="blockquote mb-0">
-	  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat.</p>
-	  <footer class="blockquote-footer text-white">
-		<small>
-		  Someone famous in <cite title="Source Title">Source Title</cite>
-		</small>
-	  </footer>
-	</blockquote>
-  </div>
-  <div class="card text-center">
-	<div class="card-body">
-	  <h5 class="card-title">Card title</h5>
-	  <p class="card-text">This card has a regular title and short paragraphy of text below it.</p>
-	  <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-	</div>
-  </div>
-  <div class="card">
-	<img src="..." class="card-img-top" alt="...">
-  </div>
-  <div class="card p-3 text-right">
-	<blockquote class="blockquote mb-0">
-	  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-	  <footer class="blockquote-footer">
-		<small class="text-muted">
-		  Someone famous in <cite title="Source Title">Source Title</cite>
-		</small>
-	  </footer>
-	</blockquote>
-  </div>
-  <div class="card">
-	<div class="card-body">
-	  <h5 class="card-title">Card title</h5>
-	  <p class="card-text">This is another card with title and supporting text below. This card has some additional content to make it slightly taller overall.</p>
-	  <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-	</div>
-  </div>
-</div>
+		<div class="card-columns">
+			<div class="card">
+				<img src="media/noticia1.jpg" class="card-img-top" alt="noticia cerebro">
+				<div class="card-body d-none d-sm-none d-md-block">
+					<h5 class="card-title">NEUROCIENCIA</h5>
+					<p class="card-text">Cómo rejuvenecer el cerebro, según un experto.</p>
+					<a class="btn d-flex justify-content-center botonNoticias mt-4" href="#noticia1" role="button">Mirá la nota completa</a>
+				</div>
+			</div>
+			<div class="card p-3">
+				<blockquote class="blockquote mb-0 card-body">
+					<p>Cómo mejorar la salud mental tras la pandemia del coronavirus.</p>
+					<footer class="blockquote-footer">
+						<small class="text-muted">Ignacio Morgado Bernal <cite title="Source Title">catedrático de psicobiología</cite></small>
+					</footer>
+					<div class="d-none d-sm-none d-md-block">
+						<a class="btn d-flex justify-content-center botonNoticias mt-4" href="#noticia2" role="button">Mirá la nota completa</a>
+					</div>
+				<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+				</blockquote>
+			</div>
+			<div class="card">
+				<div class="card-body">
+					<h5 class="card-title">SALUD</h5>
+					<p class="card-text">La conexión mente y cuerpo: trastornos de somatización.</p>
+					<div class="d-none d-sm-none d-md-block">
+						<a class="btn d-flex justify-content-center botonNoticias mt-4" href="#noticia3" role="button">Mirá la nota completa</a>
+					</div>					
+					<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+				</div>
+			</div>
+			<div class="card rosa bgVerde text-white text-center p-3">
+				<blockquote class="blockquote mb-0">
+					<p>Todas las mejores noticias de Salud, Neurociencia y de Interés para vos!</p>
+					<footer class="blockquote-footer rosa text-black">
+						<small>Enterate de todas las noticias <cite title="Source Title">en Vita +, tu web saludable</cite></small>
+					</footer>
+				</blockquote>
+			</div>
+			<div class="card text-center">
+				<div class="card-body">
+					<h5 class="card-title">CARDIOLOGÍA</h5>
+					<p class="card-text">Tres aspectos que debes saber sobre la prevención de la aterosclerosis</p>
+					<div class="d-none d-sm-none d-md-block">
+						<a class="btn d-flex justify-content-center botonNoticias mt-4" href="#noticia4" role="button">Mirá la nota completa</a>
+					</div>					
+					<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+				</div>
+			</div>
+			<div class="card p-3 text-right">
+				<blockquote class="blockquote mb-0 card-body">
+					<p>Personas narcisistas: por qué son 'intratables' para muchos psicoterapeutas.</p>
+					<footer class="blockquote-footer">
+						<small class="text-muted">Psicólogo Walter Riso<cite title="Source Title">para el Diario español NIUS.</cite></small>
+					</footer>
+					<div class="d-none d-sm-none d-md-block">
+						<a class="btn d-flex justify-content-center botonNoticias mt-4" href="#noticia5" role="button">Mirá la nota completa</a>
+					</div>
+				</blockquote>
+			</div>
+			<div class="card">
+				<img src="media/tabaco.jpg" class="card-img-top" alt="tabaco">
+				<div class="card-body">
+					<h5 class="card-title">SALUD PÚBLICA</h5>
+					<p class="card-text">El impacto del consumo de tabaco en la actualidad.</p>
+					<div class="d-none d-sm-none d-md-block">
+						<a class="btn d-flex justify-content-center botonNoticias mt-4" href="#noticia6" role="button">Mirá la nota completa</a>
+					</div>
+					<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+				</div>
+			</div>
+		</div>
 
+		<!--COMIENZO DE NOTICIA #1-->
+		<div class="noticiasExtendidas bgCeleste">
+			<div id="noticia1">
+				<h2>Cómo rejuvenecer el cerebro, según un experto.</h2>
+				<h4>Según el profesor James Goodwin, la pérdida de la memoria no es inevitable. Estos son seis consejos para prevenirla.</h4>
+				<div class="d-flex justify-content-around px-2">
+					<img src="media/noticia1.jpg" class="card-img-top imagenNoticias mr-3" alt="rejuvenecar cerebro">
+					<p>Muchos piensan que olvidar cosas es parte natural del envejecimiento. Pero el experto en fisiología James Goodwin no lo cree así. Aún más, en su nuevo libro Supercharge Your Brain dice que es posible proteger este órgano del proceso de deterioro, pues constantemente las neuronas se regeneran. Para lograrlo, señala una serie de trucos que vale la pena poner en práctica cuanto antes. Porque no importa lo que se diga del corazón, el cerebro es uno de los órganos más importantes para mantener la buena salud. Estos son:</p>
+				</div>
+					<p>1) Menos televisión y más ejercicio, porque la actividad física promueve la neurogénesis, proceso que lleva al cerebro a mantener en buena forma las células y estimular el crecimiento de nuevas, así como las conexiones entre ellas. Solo se requiere de 30 minutos de ejercicio moderado o intenso al día para lograrlo, aunque es importante no pasar tanto tiempo inactivo frente a las pantallas. El sedentarismo causa inflamación, un proceso que envejece el cerebro. Recuerde: siempre en movimiento.</p>
+				<p>2) Socializar es crucial porque los seres humanos están cableados para relacionarse con los demás. El aislamiento, por lo tanto, es nocivo, tanto como fumar o ser alcohólico, según algunos estudios, ya que genera trastornos de sueño que llevan al desgaste del cerebro. Cualquier tipo de actividad social ayuda, así sea ver a los amigos de manera virtual, aunque lo ideal es frente a frente.</p>
+				<p>3) Dieta variada. Como lo dice el autor, 75 por ciento de la comida procesada y de la dieta de la mayoría está basada en apenas cinco animales y 12 productos. “Antes el ser humano comía lo que fuera y su dieta era diversa”. Comer siempre lo mismo le roba nutrientes al cerebro como la vitamina B12 o la vitamina D.</p>
+				<p>4) Coma sin llenarse, puesto que comer de más es malo para el cerebro. Un estudio hecho en Estados Unidos observó que comer más calorías de las recomendadas después de los 40 años dobla el riesgo de pérdida de memoria. El experto explica que cuando la gente come de más, el cerebro tiene que lidiar con los radicales libres. Recomienda emular el ejemplo de la gente de Okinawa, una isla de Japón, donde residen los más longevos del mundo, que paran de comer cuando están “80 por ciento llenos”. </p>
+				<p>5) Aprenda. Aunque mucho se dice que el sudoku y los crucigramas ayudan, no hay evidencia de que así sea. Lo que sí se sabe es que aprender a bailar o incursionar en un nuevo idioma es crucial, así como “todo lo que involucre concentración y esfuerzo”.</p>
+				<p>6) Sexo, siempre. Esta actividad es un protector de la vejez del cerebro porque este órgano genera dopamina, oxitocina y serotonina durante el orgasmo. En diversos estudios se ha visto que las personas mayores de 50 años con actividad sexual constante tienen mejor memoria, especialmente si sus relaciones son cercanas y profundas. Estas personas que le dicen sí al sexo, además, son buenas en vocabulario, razonamiento y matemáticas.</p>
+			</div>
+		</div>
 
-<div class="noticiasExtendidas">
-  <div id="noticiaNeuro">
-	<h2>La calidad de vida de un individuo depende de su capacidad para sentir sus emociones de forma adecuada y para regularlas en respuesta a las circunstancias estresantes de la vida.</h2>
-	<img src="media/neuro2.jpg" class="card-img-top imagenNoticias" alt="neuro">
-	<p>La calidad de vida de un individuo depende de su capacidad para sentir sus emociones de forma adecuada y para regularlas en respuesta a las circunstancias estresantes de la vida.</p>
-	<p>John Martyn Harlow, doctor de la compañía de ferrocarril Rutland and Burlington, de Nueva Inglaterra (EE UU), poco pudo hacer para remediar la situación de Phineas Gage, capataz de esa misma compañía, cuando el 13 de septiembre de 1848 una chispa deflagró la pólvora de un agujero en el que Phineas apisonaba con una barra de hierro mientras, casualmente, miraba por encima de su hombro. La explosión hizo que la barra apisonadora, de seis kilos y más de un metro de longitud, atravesara como una lanza la cara de Gage por el lado izquierdo de su cabeza. Manchada de sangre y con algunos trozos de cerebro, la barra fue hallada a cierta distancia del lugar del suceso. Llevado en carro a su hotel, incluso pudo subir la escalera con ayuda de sus hombres. Su mente, sorprendentemente, parecía normal y él decía querer volver pronto al trabajo. Pero no era cierto, pues la barra había perforado la base de su cerebro en las regiones conocidas como corteza ventromedial y orbitofrontal, las que contienen las neuronas que hacen que los razonamientos puedan influir en las emociones y estas en los razonamientos. Cuando esa comunicación se rompió fue la emoción, y no la razón, la que dominó para siempre la vida de Phineas Gage.</p>
-	<p>La revista Nature Neuroscience, primera del mundo en su especialidad, en el editorial de un número especial dedicado a las emociones (septiembre de 2007), hizo la que podemos considerar mejor lectura de la capacidad que Gage perdió tras su accidente: la calidad de vida de un individuo depende de su capacidad para sentir sus emociones de forma adecuada y para regularlas en respuesta a las circunstancias estresantes de la vida.</p>
-	<p>La historia viene a cuento porque la pandemia vírica que padecemos ha deteriorado no solo la salud somática, sino también la mental de los ciudadanos y ahora son muchos quienes acertadamente reclaman, además de vacunas, una atención especial para esa deteriorada salud. La principal dificultad para conseguirlo estriba en que no es fácil recomponer el ánimo y la vida cotidiana cuando se han perdido seres queridos, se ha enfermado, se ha perdido el trabajo, han disminuido o se han deteriorado las relaciones sociales y se han añorado abrazos de familiares y amigos. El dolor y el miedo han sido y son una constante en la vida de mucha gente. Según estadísticas recientes, en nuestro país solo disponemos de unos seis psicólogos por cada 100.000 habitantes (9.000 son psicólogos clínicos, un 30 % de ellos en la sanidad pública) para incrementar esa necesaria atención, pero su trabajo, si está bien orientado, puede ser muy importante para conseguir recomponernos en el tiempo que vivimos. ¿Cómo orientarlo?</p>
-	<p>Gage perdió la capacidad de influir en sus sentimientos utilizando la razón, el arma más poderosa de la que disponemos para mejorar nuestra salud mental, pero todos podemos utilizar esa capacidad si estamos bien instruidos para hacerlo y esa instrucción es una de las armas fundamentales que pueden utilizar los psicólogos para ayudar a la gente que lo está pasando mal. Cuando razonando somos capaces de ver las cosas de otra manera, podemos sentirnos mejor. Y no se trata de engañarnos a nosotros mismos porque nadie está privado del derecho de elegir para sí mismo la interpretación de la realidad que mejor se ajuste a su bienestar. La psicología de hoy está muy bien fundamentada en la neurociencia, pero sus reglas de oro son ancestrales. El emperador romano Marco Aurelio no sabía nada sobre el cerebro, pero acertó al considerar que lo que verdaderamente nos hace sufrir no son las cosas que pasan, sino nuestro modo de verlas y eso, admitió, es algo que podemos cambiar en cualquier momento. La vida de una persona, dijo, es lo que sus pensamientos hacen de ella. Fue, de ese modo, el verdadero padre de lo que hoy llamamos inteligencia emocional, la capacidad de utilizar la razón para gestionar convenientemente nuestras emociones.</p>
-	<p>Materia gris es un espacio que trata de explicar, de forma accesible, cómo el cerebro crea la mente y controla el comportamiento. Los sentidos, las motivaciones y los sentimientos, el sueño, el aprendizaje y la memoria, el lenguaje y la consciencia, al igual que sus principales trastornos, serán analizados en la convicción de que saber cómo funcionan equivale a conocernos mejor e incrementar nuestro bienestar y las relaciones con las demás personas.</p>
-  </div>
+		<!--COMIENZO DE NOTICIA #2-->
+		<div class="noticiasExtendidas">
+			<div id="noticia2">
+				<h2>Cómo mejorar la salud mental tras la pandemia del coronavirus.</h2>
+				<h4>La calidad de vida de un individuo depende de su capacidad para sentir sus emociones de forma adecuada y para regularlas en respuesta a las circunstancias estresantes de la vida.</h4>
+				<div class="d-flex justify-content-around px-2">
+					<img src="media/neuro2.jpg" class="card-img-top imagenNoticias mr-3" alt="salud mental">
+					<p>John Martyn Harlow, doctor de la compañía de ferrocarril Rutland and Burlington, de Nueva Inglaterra (EE UU), poco pudo hacer para remediar la situación de Phineas Gage, capataz de esa misma compañía, cuando el 13 de septiembre de 1848 una chispa deflagró la pólvora de un agujero en el que Phineas apisonaba con una barra de hierro mientras, casualmente, miraba por encima de su hombro. La explosión hizo que la barra apisonadora, de seis kilos y más de un metro de longitud, atravesara como una lanza la cara de Gage por el lado izquierdo de su cabeza.</p>
+				</div>
+				<p>Manchada de sangre y con algunos trozos de cerebro, la barra fue hallada a cierta distancia del lugar del suceso. Llevado en carro a su hotel, incluso pudo subir la escalera con ayuda de sus hombres. Su mente, sorprendentemente, parecía normal y él decía querer volver pronto al trabajo. Pero no era cierto, pues la barra había perforado la base de su cerebro en las regiones conocidas como corteza ventromedial y orbitofrontal, las que contienen las neuronas que hacen que los razonamientos puedan influir en las emociones y estas en los razonamientos. Cuando esa comunicación se rompió fue la emoción, y no la razón, la que dominó para siempre la vida de Phineas Gage.</p>
+				<p>La revista Nature Neuroscience, primera del mundo en su especialidad, en el editorial de un número especial dedicado a las emociones (septiembre de 2007), hizo la que podemos considerar mejor lectura de la capacidad que Gage perdió tras su accidente: la calidad de vida de un individuo depende de su capacidad para sentir sus emociones de forma adecuada y para regularlas en respuesta a las circunstancias estresantes de la vida.</p>
+				<p>La historia viene a cuento porque la pandemia vírica que padecemos ha deteriorado no solo la salud somática, sino también la mental de los ciudadanos y ahora son muchos quienes acertadamente reclaman, además de vacunas, una atención especial para esa deteriorada salud. La principal dificultad para conseguirlo estriba en que no es fácil recomponer el ánimo y la vida cotidiana cuando se han perdido seres queridos, se ha enfermado, se ha perdido el trabajo, han disminuido o se han deteriorado las relaciones sociales y se han añorado abrazos de familiares y amigos. El dolor y el miedo han sido y son una constante en la vida de mucha gente. Según estadísticas recientes, en nuestro país solo disponemos de unos seis psicólogos por cada 100.000 habitantes (9.000 son psicólogos clínicos, un 30 % de ellos en la sanidad pública) para incrementar esa necesaria atención, pero su trabajo, si está bien orientado, puede ser muy importante para conseguir recomponernos en el tiempo que vivimos. ¿Cómo orientarlo?</p>
+				<p>Gage perdió la capacidad de influir en sus sentimientos utilizando la razón, el arma más poderosa de la que disponemos para mejorar nuestra salud mental, pero todos podemos utilizar esa capacidad si estamos bien instruidos para hacerlo y esa instrucción es una de las armas fundamentales que pueden utilizar los psicólogos para ayudar a la gente que lo está pasando mal. Cuando razonando somos capaces de ver las cosas de otra manera, podemos sentirnos mejor. Y no se trata de engañarnos a nosotros mismos porque nadie está privado del derecho de elegir para sí mismo la interpretación de la realidad que mejor se ajuste a su bienestar. La psicología de hoy está muy bien fundamentada en la neurociencia, pero sus reglas de oro son ancestrales. El emperador romano Marco Aurelio no sabía nada sobre el cerebro, pero acertó al considerar que lo que verdaderamente nos hace sufrir no son las cosas que pasan, sino nuestro modo de verlas y eso, admitió, es algo que podemos cambiar en cualquier momento. La vida de una persona, dijo, es lo que sus pensamientos hacen de ella. Fue, de ese modo, el verdadero padre de lo que hoy llamamos inteligencia emocional, la capacidad de utilizar la razón para gestionar convenientemente nuestras emociones.</p>
+				<p>Materia gris es un espacio que trata de explicar, de forma accesible, cómo el cerebro crea la mente y controla el comportamiento. Los sentidos, las motivaciones y los sentimientos, el sueño, el aprendizaje y la memoria, el lenguaje y la consciencia, al igual que sus principales trastornos, serán analizados en la convicción de que saber cómo funcionan equivale a conocernos mejor e incrementar nuestro bienestar y las relaciones con las demás personas.</p>
+			</div>
+		</div>
 
-  <div id="noticiaTabaco">
-	<h2>La calidad de vida de un individuo depende de su capacidad para sentir sus emociones de forma adecuada y para regularlas en respuesta a las circunstancias estresantes de la vida.</h2>
-	<img src="media/tabaco.jpg" class="card-img-top imagenNoticias" alt="tabaco">
-	<p>La calidad de vida de un individuo depende de su capacidad para sentir sus emociones de forma adecuada y para regularlas en respuesta a las circunstancias estresantes de la vida.</p>
-	<p>El tabaco además es la causa principal, no solo de la mayoría de cánceres de pulmón que existen, sino que de manera directa o indirecta es responsable de cientos de enfermedades, ya que de las aproximadamente 4.000 sustancias tóxicas que contiene un solo cigarrillo, más de 50 de ellas son cancerígenas y que en tan solo 10 segundos una vez inhaladas, se instalan en el torrente sanguíneo, con lo obviamente perjudicial que ello resulta para el organismo.</p>
-	<p>¿Cuáles son las motivaciones que impulsan a las personas a fumar? Es paradójico, porque por un lado, el hecho de fumar afortunadamente ya no está tan de moda socialmente; hemos comenzado una era healthy, donde priman más los hábitos saludables, el ejercicio y la buena alimentación,  pero por otro lado son millones de jóvenes en todo el mundo los que empiezan a fumar aun a sabiendas de las graves consecuencias que puede traer el tabaquismo a medio y largo plazo.</p>
-	<p>Desgraciadamente la deseabilidad social sigue siendo la principal causa y más tarde, la tolerancia que provocan las sustancias que se inhalan en el humo del tabaco nos lleva a pensar que no podremos soportar la abstinencia física o mental del hábito tabáquico y así se continúa  fumando durante décadas.</p>
-	<p>Ciertamente, el confinamiento por el que hemos atravesado ha sido un buen momento para decirle adiós al tabaco de una vez por todas, pero la verdad es que aún no tenemos informes realmente elaborados al respecto. Posiblemente haya que esperar aún un tiempo.</p>
-	<p>Lo que sí es seguro y según los diferentes expertos, fumar debilita y facilita los procesos infecciosos y es bien conocido que los fumadores son más proclives a las infecciones respiratorias, con lo cual y aunque reitero que no hay estudios concluyentes, siempre será mejor no fumar y así poder evitar quizá futuros contagios de COVID-19. La prevención es esencial en nuestra salud y en la de nuestro entorno.</p>
-	<p>Además, las colillas, que contienen microgotas de nuestra saliva, pueden ser un foco de transmisión no solo del coronavirus, sino de otras muchas enfermedades. Aprovecho para comentar que se está llevando a cabo un proyecto desde hace ya un tiempo, el NMCS No más colillas en el suelo, donde cada vez el éxito es mayor, principalmente por la concienciación de las personas a no tirar las colillas en las vías públicas.</p>
-  </div>
-</div>
-</main>
+		<!--COMIENZO DE NOTICIA #3-->
+		<div class="noticiasExtendidas bgCeleste">
+			<div id="noticia3">
+				<h2>La conexión mente-cuerpo: trastornos de somatización.</h2>
+				<h4>Muchas enfermedades, por raro que parezca, son creadas por la mente.</h4>
+				<div class="d-flex justify-content-around px-2">
+					<img src="media/noticia3.jpg" class="card-img-top imagenNoticias mr-3" alt="somatizacion">
+					<p>Nuestra mente es todopoderosa, dicen muchos. No solo es capaz de crear enfermedades, sino que es capaz de crear síntomas de enfermedades sin que realmente exista tal enfermedad. Esta segunda opción ha sido vista muchas veces socialmente como una señal de debilidad. “No le pasa nada, no le pasa absolutamente nada, que dice que le duele la tripa. Hemos ido al médico, le han hecho un montón de pruebas y no tiene absolutamente nada. Vamos que es un quejoso”.</p>
+				</div>
+				<p>Qué son los trastornos de somatización? El trastorno de somatización es un tipo de trastorno somatomorfo también llamado síndrome de Briquet. En este tipo de enfermedad, el paciente presenta múltiples y continuas quejas corporales sin una base física que las sostenga, es decir, no hay afectación de ningún órgano ni lesiones físicas. Generalmente estos pacientes, cuando llegan a la consulta de salud mental, se han pasado varios años yendo de especialista en especialista, haciéndose infinidad de pruebas y buscando una causa orgánica de sus dolores, pero nunca encuentran nada.</p>
+				<p>El patrón de síntomas propio del trastorno de somatización (APA, 2000) se caracteriza por una combinación de síntomas gastrointestinales, sexuales, pseudoneurológicos y dolor:</p>
+				<ul>
+					<li>Síntomas gastrointestinales: la mayoría de los pacientes con este trastorno refieren la presencia de náuseas e hinchazón abdominal. Los síntomas digestivos a menudo conducen a múltiples exámenes radiográficos, pudiendo llegar incluso a suponer intervenciones quirúrgicas que a posteriori se demuestran totalmente innecesarias.</li>
+					<li>Síntomas sexuales: en las mujeres se pueden presentar menstruaciones irregulares, menorragias o vómitos durante el embarazo; en los hombres, disfunción eréctil o eyaculatoria. Tanto los hombres como las mujeres pueden presentar indiferencia sexual.</li>
+					<li>Síntomas que sugieren la presencia de un trastorno neurológico: coordinación o equilibrio alterados, parálisis o debilidad muscular, dificultad para deglutir o sensación de tener un nudo en la garganta, afonía, retención urinaria, alucinaciones, sensación de dolor o de pérdida de tacto, ceguera, sordera o convulsiones; amnesia; pérdida de conciencia distinta del desmayo.</li>
+					<li>Síntomas de dolor: historia de dolor relacionada con al menos cuatro zonas diferentes (por ejemplo, cabeza, abdomen, espalda, articulaciones, extremidades, tórax, recto) o con diversas funciones (por ejemplo, menstruación, coito, micción).</li>
+				</ul>
+				<p>Además, a estos pacientes les acompañan altos niveles de angustia, preocupación y dificultades para su funcionamiento diario. Suelen hacer de sus síntomas el epicentro de su vida y los malestares pueden llegar a absorberlos por completo. Es habitual que las personas con este tipo trastorno desarrollen una excesiva dependencia hacia los demás ya que generan en su entorno la necesidad de ser cuidados y constantemente atendidos.</p>
+				<p>Muchas veces, a su dolor físico, (recordemos que es real aunque no haya afectación orgánica) se suma el malestar emocional al sentirse incomprendidos por sus familiares, que pueden minusvalorar sus necesidades al no haber un diagnóstico de ninguna enfermedad (porque no hay causa orgánica de su dolor). Muchas veces se les trata como quejosos, hipocondríacos, flojos, o incluso se les culpa de inventar el dolor para llamar la atención.</p>
+				<p>Sin embargo, el trastorno de somatización es una enfermedad mental muy grave si no se detecta a tiempo y puede incluso llevar al paciente a intentar suicidarse. Por ello es conveniente que el paciente acuda a psicoterapia. Por un lado para disminuir la preocupación y la ansiedad sobre sus síntomas y por otro para aprender a gestionar y expresar las emociones de una manera más saludable y funcional, en vez de esconder y tapar el malestar.</p>
+				<p>Este trastorno nos habla de esa potentísima conexión que existe entre el cuerpo y la mente, del enorme impacto que puede tener nuestra mente y nuestros conflictos emocionales mal gestionados -o directamente no gestionados- en nuestro cuerpo. Es el resultado de conflictos mentales o de problemas no resueltos que nos devoran por dentro. Como dice la famosa neuróloga Suzanne O’Sullivan, autora del Todo está en tu cabeza “Tu cuerpo te está diciendo que algo no va bien dentro de ti y que no lo estás viendo".</p>
+			</div>
+		</div>
 
+		<!--COMIENZO DE NOTICIA #4-->
+		<div class="noticiasExtendidas">
+			<div id="noticia4">
+				<h2>Tres aspectos que debes saber sobre la prevención de la aterosclerosis.</h2>
+				<h4>La aterosclerosis es una enfermedad en la que se deposita placa compuesta por grasas, colesterol, calcio y otras sustancias que se encuentran en la sangre dentro de las arterias.</h4>
+				<div class="d-flex justify-content-around px-2">
+					<img src="media/noticia4.jpg" class="card-img-top imagenNoticias mr-3" alt="aterosclerosis">
+					<p>La aterosclerosis es el proceso subyacente a los síndromes coronarios agudos y crónicos, así como de ciertas formas de accidente cerebrovascular y enfermedad arterial periférica. Las placas ateroscleróticas se desarrollan a lo largo del tiempo, esto nos permite actuar de manera preventivas para evitar complicaciones en salud.</p>
+				</div>
+				<h6>LA DENERVACIÓN RENAL AVANZADA EN LA HIPERTENSIÓN COMIENZA A SER UNA OPCIÓN DE TRATAMIENTO.</h6>
+				<p>Los resultados positivos de los ensayos sobre la eficacia y seguridad de la denervación renal avanzada en la hipertensión han ampliado aún más el espectro terapéutico en estos pacientes.</p>
+				<h6>LA ASPIRINA NO SIEMPRE ES PREVENTIVA.</h6>
+				<p>El uso de la aspirina en la prevención primaria, antes de manifestarse la enfermedad,  no tiene una relación favorable de beneficio-riesgo, en cambio sí se ven mayores beneficios en la prevención secundaria, es decir, cuando la enfermedad cardiovascular ya la padece el paciente y se pretende evitar complicaciones derivadas de la propia enfermedad.</p>
+				<h6>LOS HÁBITOS TÓXICOS COMPROMETEN LA SALUD DE NUESTRAS ARTERIAS.</h6>
+				<p>El tabaquismo y el consumo de alcohol, aún en cantidades “moderadas” se asocian con el aumento de la rigidez arterial.</p>
+			</div>
+		</div>
+
+		<!--COMIENZO DE NOTICIA #5-->
+		<div class="noticiasExtendidas bgCeleste">
+			<div id="noticia5">
+				<h2>Personas narcisistas: por qué son 'intratables' para muchos psicoterapeutas.</h2>
+				<h4>Es improbable que un narcisista reconozca que tiene un problema.</h4>
+				<div class="d-flex justify-content-around px-2">
+					<img src="media/noticia5.jpg" class="card-img-top imagenNoticias mr-3" alt="narcisistas">
+					<p>Si quisiéramos resumir en una sólo frase qué caracteriza a un narcisista podríamos decir que son personas con un sentido agudo de su propia importancia. Eso es precisamente lo que le ocurre a Antonio, un hombre de 46 años, jefe de marketing de una empresa de alimentación y cuyo caso recoge A.Jarne (2002) en el manual de Psicogía clínica de la Universitat Oberta de Catalunya.</p>
+				</div>
+				<p>Además de cuidar mucho su imagen, ya que hace dieta, va al gimnasio, viste adecuadamente, Antonio ejerce un control estricto sobre todas las personas de su entorno familiar y profesional. “Suele repasar exhaustivamente todos los trabajos que se le entregan y añadir su 'sello personal’, por lo que nada está perfectamente acabado si él no lo retoca. A sus subordinados les exige dedicación completa al trabajo y alta velocidad en su rendimiento, y también una atención constante. A veces, fuera de horas de trabajo, los llama por teléfono para aclarar cualquier duda sobre el trabajo. Suele hacer alarde de sus proyectos, explica la facilidad con la que consigue éxitos, se relaciona con personas que él cree muy importantes y lo comenta en público, ante sus subordinados y amigos, para que se percaten de que él también es muy importante. Considera que nadie puede hacer mejor su trabajo y constantemente encuentra errores en sus homólogos. Cuando conversa con sus amigos suele contar ampliamente todo lo que consigue, pero no se interesa por lo que hacen o sienten los demás. Ocupa el tiempo hablando de él mismo y sus progresos en la empresa. A su vez, piensa que en cierto modo es envidiado por los demás, y no duda en desprestigiarlos”.</p>
+				<p>Este tipo de personas muestran una exagerada seguridad en sí mismas, sobrevaloran sus capacidades, exageran sus conocimientos y cualidades. Suelen culpar a los demás cuando no consiguen sus metas y son envidiosos del éxito ajeno. Sus relaciones interpersonales suelen estar deterioradas a causa de su arrogancia, su necesidad de admiración y la falta de interés hacia los sentimientos de los otros. Como el narcista se cree superior, especial y único, espera que los demás le reconozcan como tal y solo se relacionan con personas exitosas y especiales especiales como ellas.</p>
+				<p>Como vemos este un tipo de trastorno de la personalidad es muy visible y fácilmente detectable por los demás ¿Quién no conoce a algún narcisista? Sin embargo, es difícil que un narcisista reconozca que tiene un problema.</p>
+				<p>También es interesante cambiar los ojos con los que miramos a este tipo de personas que tanto rechazo social generan porque, detrás de este derroche de autoconfianza, en realidad esconden una gran inseguridad y una gran sensibilidad a la crítica y al rechazo social. En el fondo son personas muy débiles que necesitan por encima de todo el reconocimiento y la atención de los demás. Las críticas o los comentarios negativos de los demás son escuchados como ultrajes, lo cual puede provocarles irritabilidad y sentimientos de vacío.</p>
+				<p>Son personas que necesitan ayuda, pero que difícilmente acuden a buscarla: su arrogancia se lo impide. Ahí está el quid de la cuestión y ahí está también el motivo por el que la terapia con este tipo de personas es muy complicada…de hecho, no son nada extraños los intentos de seducir al psicoterapeuta por parte de un paciente narcisista.</p>
+				<p>La idea de abordar el trastorno narcisista de la personalidad desde esta perspectiva del paciente intratable la dio sin saberlo el psicólogo Walter Riso, en una reciente entrevista publicada en el Diario español NIUS.</p>
+				<p>“En estos 30 años viendo pacientes, muy poca gente he encontrado con el ‘yo puedo con todo’…esos son los narcisistas, pero los narcisistas son los que entran en la consulta y te dicen: ‘doctor lo felicito, voy a ser su paciente’. Entonces, cuando te digan eso, diles: ‘bueno, deje que yo hable con usted un ratito y a ver si soy yo quien lo felicita a usted por tenerme a mí como psicólogo”.</p>
+				<p>Esta arrogancia que caracteriza a las personas narcisistas explica en gran medida por qué es bastante improbable que una persona con este trastorno de la personalidad acuda a terapia salvo que su trastorno haya provocado otros problemas. Eso explica también que las estimaciones de prevalencia de este trastorno sean tan imprecisas. Según el DSM-5 (APA, 2013) las estimaciones oscilan entre el 0 y el 6,2% en la población general. Ya dentro de la población clínica (personas que están en tratamiento por enfermedad mental) oscilan entre el 2 y el 16%, lo cuál se debe a que muchas veces estos trastornos están enmascarados por otras patologías más visibles.</p>
+			</div>
+		</div>
+
+		<!--COMIENZO DE NOTICIA #6-->
+		<div class="noticiasExtendidas">
+			<div id="noticia6">
+				<h2>El impacto del consumo de tabaco en la actualidad.</h2>
+				<h4>El consumo de tabaco además de ser un hábito y un vicio, es sobre todo una enfermedad.</h4>
+				<div class="d-flex justify-content-around px-2">
+					<img src="media/tabaco.jpg" class="card-img-top imagenNoticias mr-3" alt="tabaco">
+					<p>El tabaquismo causa millones de muertes al cabo del año en todo el mundo, perjudicando seriamente la calidad de vida tanto de los fumadores como de su entorno y del propio planeta.La Nicotina es una droga muy potente, tanto o más adictiva que la Cocaína o la Heroína. El tabaco además es la causa principal, no solo de la mayoría de cánceres de pulmón que existen, sino que es responsable de cientos de enfermedades, ya que de las aproximadamente 4.000 sustancias tóxicas que contiene un solo cigarrillo, más de 50 de ellas son cancerígenas.</p>
+				</div>
+				<p>En tan solo 10 segundos una vez inhaladas, se instalan en el torrente sanguíneo, con lo obviamente perjudicial que ello resulta para el organismo.</p>
+				<h6>¿CUÁLES SON LAS MOTIVACIONES QUE IMPULSAN A LAS PERSONAS A FUMAR?</h6>
+				<p>Es paradójico, porque por un lado, el hecho de fumar afortunadamente ya no está tan de moda socialmente; hemos comenzado una era healthy, donde priman más los hábitos saludables, el ejercicio y la buena alimentación,  pero por otro lado son millones de jóvenes en todo el mundo los que empiezan a fumar aun a sabiendas de las graves consecuencias que puede traer el tabaquismo a medio y largo plazo.</p>
+				<p>Desgraciadamente la deseabilidad social sigue siendo la principal causa y más tarde, la tolerancia que provocan las sustancias que se inhalan en el humo del tabaco nos lleva a pensar que no podremos soportar la abstinencia física o mental del hábito tabáquico y así se continúa  fumando durante décadas.</p>
+				<p>Ciertamente, el confinamiento por el que hemos atravesado ha sido un buen momento para decirle adiós al tabaco de una vez por todas, pero la verdad es que aún no tenemos informes realmente elaborados al respecto. Posiblemente haya que esperar aún un tiempo.</p>
+				<p>Lo que sí es seguro y según los diferentes expertos, fumar debilita y facilita los procesos infecciosos y es bien conocido que los fumadores son más proclives a las infecciones respiratorias, con lo cual y aunque reitero que no hay estudios concluyentes, siempre será mejor no fumar y así poder evitar quizá futuros contagios de COVID-19. La prevención es esencial en nuestra salud y en la de nuestro entorno.</p>
+				<p>Además,  las colillas, que contienen microgotas de nuestra saliva, pueden ser un foco de transmisión no solo del coronavirus, sino de otras muchas enfermedades. Aprovecho para comentar que se está llevando a cabo un proyecto desde hace ya un tiempo, el NMCS No más colillas en el suelo, donde cada vez el éxito es mayor, principalmente por la concienciación de las personas a no tirar las colillas en las vías públicas.</p>
+			</div>
+		</div>
+	</main>
 
 	<aside class="asideSecciones d-none d-md-block">
 		<div class="elementosAside">
@@ -181,6 +275,36 @@
 		</div>
 	</aside>
 
+	<!--BOTÓN FIXED DE VOLVER ARRIBA-->
+	<div class="volverFixed">
+		<a href="noticias-extend.html" class="volverArriba"><i class="fas fa-angle-double-up"></i></a>
+	</div>
+
+	<div class="piePagina">
+		<h3>El cambio comienza por uno!</h3>
+		<div class="piePaginaImagenes">
+			<div class="logoCircular">
+				<img src="media/logo-circular.png" class="d-none d-md-block" alt="">
+			</div>
+		</div>
+	</div>
+		
+	<!--COMIENZO DE ZÓCALO FINAL-->	
+	<div class="zocalo">
+		<div>
+			<a href="index.html">Volver al Home</a>
+		</div>
+		<div>
+			<p>Copyright © 2021 Julia Pedraza - Todos los derechos reservados</p>
+		</div>
+		<div>
+			<img src="iconos/facebook.png" alt="facebook">
+			<img src="iconos/twitter.png" alt="twitter">
+			<img src="iconos/instagram.png" alt="instagram">
+			<img src="iconos/youtube.png" alt="youtube">
+		</div>
+	</div>
+
 	<footer id="contacto" class="footerSecciones conBorde">
 		<div>
 			<img src="iconos/posicion.png" alt="locacion">
@@ -197,33 +321,7 @@
 		</div>
 	</footer>
 
-	<div class="volverFixed">
-		<a href="noticias-extend.html" class="volverArriba"><i class="fas fa-angle-double-up"></i></a>
-	</div>
-
-	<div class="piePagina">
-		<div class="piePaginaImagenes">
-			<div class="logoCircular">
-				<img src="media/logo-circular.png" class="d-none d-md-block" alt="">
-			</div>
-		</div>
-	</div>
-		
-	<div class="zocalo">
-		<div>
-			<a href="index.html">Volver al Home</a>
-		</div>
-		<div>
-			<p>Copyright © 2021 Julia Pedraza - Todos los derechos reservados</p>
-		</div>
-		<div>
-			<img src="iconos/facebook.png" alt="facebook">
-			<img src="iconos/twitter.png" alt="twitter">
-			<img src="iconos/instagram.png" alt="instagram">
-			<img src="iconos/youtube.png" alt="youtube">
-		</div>
-	</div>
-
+	<!--CÓDIGOS JAVASCRIPT-->
 	<script src="js/wow.min.js"></script>
 	<script>new WOW().init();</script>
 	<script src="https://kit.fontawesome.com/c721f37032.js" crossorigin="anonymous"></script>

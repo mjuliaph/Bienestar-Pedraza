@@ -331,9 +331,7 @@
 	@include seccionesIndexMob;
 	background-color: $colorRosaClaro;
 	border: 1px solid $colorRosa;
-
  	img{
-		@include imagenesSeccionesIndexMob;
 		border: 1px solid $colorRosa;
 	}
 	.parrafoSecciones{
@@ -356,9 +354,7 @@
 	@include seccionesIndexMob;
 	background-color: $colorCeleste;
 	border: 1px solid $colorBlue;
-	
- 	img{
-		@include imagenesSeccionesIndexMob;
+	img{
 		border: 1px solid $colorBlue;
 	}
 	.parrafoSecciones{
@@ -384,9 +380,7 @@
 	background-color: $colorRosaClaro;
 	border: 1px solid $colorRosa;
 	margin-left: 9em;
-
  	img{
-		@include imagenesSeccionesIndexMob;
 		border: 1px solid $colorRosa;
 	}
 	.parrafoSecciones{
@@ -417,9 +411,7 @@
 	background-color: $colorCeleste;
 	border: 1px solid $colorBlue;
 	margin-left: 9em;
-
  	img{
-		@include imagenesSeccionesIndexMob;
 		border: 1px solid $colorBlue;
 	}
 	.parrafoSecciones{

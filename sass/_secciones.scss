@@ -186,30 +186,23 @@
 }
 
 
-
+.contenidoSecciones{
+	margin: 1.5em;
+	padding: 1em;
+	line-height: 2;
+}
 
 
 .bloqueSecciones{
-	margin: 1em;
-	padding: 1em;
-	display: flex;
-	flex-direction: row;
-	justify-content: space-evenly;
-		img{
-			margin: 0 0.5em;
-			width: 250px; 
-			height:350px;
-			object-fit: cover;
-			object-position: center center;
-			overflow: hidden;
-			border-radius: 5px 5px 5px 5px;
-		}			
-		p{
-			margin: 0 2em;
-			text-align: justify;
-			line-height: 2;
-	}
+	@include contenedorSecciones;
 }
+
+.bloqueSeccionesInvertidas{
+	@include contenedorSecciones;
+		flex-direction: row-reverse;
+}
+
+
 
 .asideSecciones{
 	width: 100%;

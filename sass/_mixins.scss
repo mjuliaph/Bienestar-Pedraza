@@ -107,3 +107,28 @@
 	line-height: 3;
 }
 
+
+@mixin contenedorSecciones{
+	margin: 1em 0em;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	img{
+		margin: 0.5em 0.5em;
+		width: 250px; 
+		height:350px;
+		object-fit: cover;
+		object-position: center center;
+		overflow: hidden;
+		border-radius: 5px 5px 5px 5px;
+	}			
+	p{
+		text-align: justify;
+
+	}
+	ul{
+		list-style-position: inside;
+		line-height: 2;
+
+	}
+}

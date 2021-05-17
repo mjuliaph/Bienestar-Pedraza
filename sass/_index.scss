@@ -315,29 +315,35 @@
 }
 
 #carouselExampleCaptions{
-	margin-top: 5em;
-	height: 350px;
+	margin: 4em 0;
+	height: 200px;
+	.carousel-indicators li{
+		background-color: $colorRosaClaro;
+	}
 	.carousel-item{
 	img{
-		width:200px;
-		height: 200px;
-		border-radius: 5%;
-		border: 2px solid $colorVioleta;
-		margin-top: 3em;
-		filter: opacity(75%);
+		width:100px;
+		height: 100px;
+		margin-top: 4em;
+		filter: opacity(0%);
 	}
 		h5{
-			font-family:$font-os;
-			font-weight:$font-os-bold;
+			margin-top: 1em;
+			font-family:$font-wo;
+			font-weight:$font-wo-bold;
 			font-size: $mediano;
-			color: $colorVioleta;	
+			color: $colorVioleta;
+			letter-spacing: 0.40em;	
 		}
 		p{
-			font-family:$font-os;
-			font-weight:$font-os-light;
+			font-family:$font-wo;
+			font-weight:$font-wo-regular;
 			font-size: $pequeño;
 			color: $colorNegro;
 		}
+	}
+	.carousel-control-next, .carousel-control-prev{
+		filter: opacity(0%);
 	}
 }
 
@@ -379,6 +385,7 @@ footer{
 	}
 	.redesSociales img {
 		width: 20px;
+		margin:0 0.5em;
 	}
 
 }
@@ -430,8 +437,6 @@ h4{
 	margin-top: 0.5em;
 	margin-bottom: 1em;
 }
-
-
 
 
 

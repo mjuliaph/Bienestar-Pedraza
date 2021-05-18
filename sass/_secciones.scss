@@ -84,20 +84,20 @@
 
 .bannerEntrenamiento{
 	@include bannerSecciones;
-	background-image: url(../media/bannerEntre.jpg);
+	background-image: url(../media/bannerSeccion-entrenamiento.jpg);
 }
 
 .bannerAlimentacion{
 	@include bannerSecciones;
-	background-image: url("../media/alibanner.jpg");
+	background-image: url("../media/bannerSeccion-alimentacion.jpg");
 }
 .bannerBelleza{
 	@include bannerSecciones;
-	background-image: url("../media/belbanner.jpg");
+	background-image: url("../media/bannerSeccion-belleza.jpg");
 }
 .bannerNoticias{
 	@include bannerSecciones;
-	background-image: url("../media/banner-noti-1.jpg");
+	background-image: url("../media/bannerSeccion-noticias.jpg");
 }
 .bannerFormulario{
 	@include bannerSecciones;
@@ -189,17 +189,37 @@
 .contenidoSecciones{
 	margin: 1.5em;
 	padding: 1em;
-	line-height: 2;
+	line-height: 2.5;
+	ul{
+		list-style-position: inside;
+		list-style-type: square;
+	}
+	h4{
+		font-size: $no-tan-pequeño;
+	}
 }
 
 
 .bloqueSecciones{
 	@include contenedorSecciones;
+	img{
+	margin-right: 2em;
+	}
+	ul{
+	list-style-position: inside;
+	list-style-type: square;
+	}
 }
 
 .bloqueSeccionesInvertidas{
 	@include contenedorSecciones;
-		flex-direction: row-reverse;
+	img{
+		margin-left: 2em;
+	}
+		ul{
+	list-style-position: inside;
+	list-style-type: square;
+	}
 }
 
 
@@ -383,7 +403,7 @@
 
 	.logoCircular img{
 		filter: saturate(180%);
-		margin-top: -270px;
+		margin-top: -200px;
 		width: 150px;	
 		}
 	}

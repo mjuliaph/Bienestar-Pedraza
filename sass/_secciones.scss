@@ -95,6 +95,10 @@
 	@include bannerSecciones;
 	background-image: url("../media/bannerSeccion-belleza.jpg");
 }
+.bannerSalud{
+	@include bannerSecciones;
+	background-image: url("../media/bannerSeccion-salud.jpeg");
+}
 .bannerNoticias{
 	@include bannerSecciones;
 	background-image: url("../media/bannerSeccion-noticias.jpg");
@@ -102,7 +106,6 @@
 .bannerFormulario{
 	@include bannerSecciones;
 	background-color: $colorBlue;
-
 }
 
 

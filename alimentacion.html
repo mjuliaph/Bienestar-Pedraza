@@ -588,17 +588,15 @@
 	</div>
 
 	<!--PIE DE PÁGINA-->
-	<div class="piePagina">
-		<h3>El cambio comienza por uno!</h3>
-		<div class="piePaginaImagenes">
-			<div class="logoCircular">
-				<img src="iconos/logo-circular.png" class="d-none d-md-block" alt="logo">
-			</div>
+	<div class="d-flex flex-column align-items-center piePagina">
+		<div>
+			<img src="iconos/logo-circular.png" class="d-none d-md-block" alt="logo">
 		</div>
+		<h3>El cambio comienza por uno!</h3>
 	</div>
 
 	<!--COMIENZO DE ZÓCALO FINAL-->			
-	<div class="zocalo">
+	<div class="container-fluid d-flex justify-content-between align-items-center zocalo">
 		<div>
 			<a href="index.html">Volver al Home</a>
 		</div>
@@ -606,19 +604,19 @@
 			<p>Copyright © 2021 Julia Pedraza - Todos los derechos reservados</p>
 		</div>
 		<div>
-			<img src="iconos/facebook.png" alt="facebook">
-			<img src="iconos/twitter.png" alt="twitter">
-			<img src="iconos/instagram.png" alt="instagram">
-			<img src="iconos/youtube.png" alt="youtube">
+			<a href="https://es-la.facebook.com/"><img src="iconos/facebook.png" alt="facebook"></a>
+			<a href="https://twitter.com/login?lang=es"><img src="iconos/twitter.png" alt="twitter"></a>
+			<a href="https://www.instagram.com/?hl=es-la"><img src="iconos/instagram.png" alt="instagram"></a>
+			<a href="https://www.youtube.com/"><img src="iconos/youtube.png" alt="youtube"></a>
 		</div>
 	</div>
 
 	<!--COMIENZO FOOTER SECCIONES-->
-	<footer id="contacto" class="footerSecciones conBorde">
+	<footer id="contacto" class="container-fluid d-flex flex-column justify-content-around footerSecciones conBorde">
 		<div>
 			<img src="iconos/posicion.png" alt="locacion">
 			<p>Encontranos en:</p>
-			<p>Avda. Santa Fe 1200</p>
+			<p>Santa Fe 1200</p>
 			<p>CABA, Argentina</p>
 		</div>
 		<div>
@@ -626,7 +624,7 @@
 			<p>También podés</p>
 			<p>enviarnos tus</p>
 			<p>opiniones...</p>
-			<button> <a href="formulario-contacto.html">Escribinos!</a></button>
+			<button class="tipeWoBl"><a href="formulario-contacto.html">Escribinos!</a></button>
 		</div>
 	</footer>
 

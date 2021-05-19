@@ -51,7 +51,25 @@ footer{
 	justify-items: center;
 }
 
-@media all and (max-width: 767.98px) and (min-width: 360px){
+@media all and (max-width: 1199.98px){
+	#grillaIndex{
+	display: grid;
+	grid-template-areas:
+	"header"
+	"main"
+	"aside"
+	"noticias"
+	"nosotros"
+	"footer"
+	;
+	grid-template-columns: auto;
+	grid-column-gap: 5px;
+	grid-template-rows: auto auto auto auto auto auto;
+	grid-row-gap: 10px;
+	}
+}
+
+@media all and (max-width: 767.98px){
 	#grillaIndex{
 	display: grid;
 	grid-template-areas:
@@ -81,10 +99,21 @@ footer{
 	grid-template-rows: auto auto auto auto auto;
 	grid-row-gap: 10px;
 	justify-items: center;
+	}
 }
 
-.piePagina{
-	grid-area: piePagina;
-
-}
+@media all and (max-width: 575.98px){
+	#grillaIndex{
+	display: grid;
+	grid-template-areas:
+	"header"
+	"main"
+	"aside"
+	"footer"
+	;
+	grid-template-columns: auto;
+	grid-column-gap: 5px;
+	grid-template-rows: auto auto auto auto;
+	grid-row-gap: 10px;
+	}
 }

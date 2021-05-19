@@ -192,6 +192,15 @@
 }
 
 
+/*CONTENIDO PRINCIPAL DE LAS SECCIONES*/
+.mainSecciones{
+	margin: 0;
+	padding: 0;
+	background-color: $colorBeige;
+	width: 100%;
+	text-align: justify;
+}
+
 .contenidoSecciones{
 	margin: 1.5em;
 	padding: 1em;
@@ -204,8 +213,6 @@
 		font-size: $no-tan-pequeño;
 	}
 }
-
-
 .bloqueSecciones{
 	@include contenedorSecciones;
 	img{
@@ -262,13 +269,7 @@
 
 
 
-.mainSecciones{
-	margin: 0;
-	padding: 0;
-	background-color: $colorBeige;
-	width: 100%;
-	text-align: justify;
-}
+
 
 
 
@@ -473,10 +474,6 @@ line-height: 2;
 	height: 100%;
 	background-color: $colorCeleste;
 	margin-top: 0px;
-/*	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: space-around;*/
 		&.conBorde{
 		border-right: 2px solid $colorNegro;		
 	}

@@ -86,7 +86,6 @@
 	@include bannerSecciones;
 	background-image: url(../media/bannerSeccion-entrenamiento.jpg);
 }
-
 .bannerAlimentacion{
 	@include bannerSecciones;
 	background-image: url("../media/bannerSeccion-alimentacion.jpg");
@@ -102,6 +101,10 @@
 .bannerNoticias{
 	@include bannerSecciones;
 	background-image: url("../media/bannerSeccion-noticias.jpg");
+}
+.bannerTips{
+	@include bannerSecciones;
+	background-image: url("../media/bannerSeccion-tips.jpg");
 }
 .bannerFormulario{
 	@include bannerSecciones;
@@ -308,18 +311,14 @@
 /*SECCION ENTRENAMIENTO*/
 
 .contenedorFuerza{
-	width: 100%;
-	display: flex;
-	flex-direction: row;
-	justify-content: space-evenly;
-		li{
-			list-style: none;
-			line-height: 4;
-		}
-		a{
-			text-decoration: none;
-			color: $colorVioleta;
-		}
+	li{
+		list-style: none;
+		line-height: 4;
+	}
+	a{
+		text-decoration: none;
+		color: $colorVioleta;
+	}
 }
 
 

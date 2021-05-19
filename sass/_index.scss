@@ -210,21 +210,17 @@
 
 .tips{
 	background-color: $colorBeige;
-	border-radius: 10px;
+	border-radius: 2px;
 	border: 1px solid $colorVioleta;
 }
 .formulario{
 	background-color: $colorBeige;
-	border-radius: 10px;
+	border-radius: 2px;
 	border: 1px solid $colorVioleta;
 	img{
 		margin-left: 0.5em;
 	}
 }
-
-
-
-
 
 
 /*NOTICIAS INDEX*/
@@ -293,7 +289,7 @@
 }	
 
 .carac-index{
-	height: auto;
+	height: 350px;
 	text-align: center;
 	border: 2px solid $colorVerde;
 

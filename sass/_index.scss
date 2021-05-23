@@ -3,13 +3,13 @@
 .headerIndex{
 	width: 100%;
 	color: $colorVioleta;
-		h1{
-			font-family: $font-am;
-			font-weight: $font-am-bold;
-			font-size: 2.25rem;
-			text-align: center;
-			margin-top: 1em;
-		}
+	h1{
+		font-family: $font-am;
+		font-weight: $font-am-bold;
+		font-size: 2.25rem;
+		text-align: center;
+		margin-top: 1em;
+	}
 }
 
 .divRedes{
@@ -18,12 +18,11 @@
 	margin-bottom: 5px;
 	display: flex;
 	justify-content: flex-end;
-		
-		img {
-			width: 20px;
-			height: 20px;
-			margin: 15px 10px;
-		}
+	img {
+		width: 20px;
+		height: 20px;
+		margin: 15px 10px;
+	}
 }
 
 .container{
@@ -93,8 +92,7 @@
 }	
 
 
-/*CARRUSELES*/
-
+/*CARRUSEL DEL HEADER*/
 
 #carouselExampleSlidesOnly{
 	margin: 2.5em 0 3em 0;
@@ -103,15 +101,12 @@
 	}
 }
 
-
-
-/*SECCIONES INDEX*/
+/*SECCIONES PRINCIPALES DEL INDEX*/
 	
 .contenedorSecciones{
 	@include seccionesIndex;
 	background-color: $colorRosaClaro;
 	border: 1px solid $colorRosa;
-
  	img{
 		border: 1px solid $colorRosa;
 	}
@@ -127,9 +122,9 @@
 			padding: 0.5em;
 		}
 		ul {
-		padding-left: 20px;
-		list-style: none;
-		line-height: 4;
+			padding-left: 20px;
+			list-style: none;
+			line-height: 4;
 			a{
 			text-decoration: none;
 			color: #121212;
@@ -143,9 +138,7 @@
 	background-color: $colorCeleste;
 	border: 1px solid $colorBlue;
 	flex-direction: row-reverse;
-
  	img{
-
 		border: 1px solid $colorBlue;
 	}
 	.parrafoSecciones{
@@ -160,9 +153,9 @@
 			padding: 0.5em;
 		}
 		ul {
-		padding-left: 20px;
-		list-style: none;
-		line-height: 4;
+			padding-left: 20px;
+			list-style: none;
+			line-height: 4;
 			a{
 			text-decoration: none;
 			color: #121212;
@@ -172,16 +165,14 @@
 }
 
 
-/*ASIDE INDEX*/
+/*BARRA LATERAL DEL INDEX*/
 
 .asideIndex{
 	@include barraLateralIndex;
 	background: linear-gradient(rgba(60,239,171,1), rgba(60,239,171,1), rgba(158,153,255,1));
-	
 	h2{
 		margin: 0.25em 0;
 	}
-
 	div {
 		width: 95%;
 		margin-top: 39px;
@@ -223,14 +214,12 @@
 }
 
 
-/*NOTICIAS INDEX*/
-
+/*NOTICIAS MARGEN LATERAL INDEX*/
 #noticias{
 	@include barraLateralIndex;
 	height: 95.5%;
 	background-color: $colorBeige;
 	border: 1px solid $colorRojo;
-/*	background: linear-gradient(rgba(158,153,255,1), rgba(60,239,171,1), rgba(60,239,171,1));*/
 	img{
 		margin-left: 0.45em;
 	}
@@ -239,8 +228,8 @@
 .card-img-top{
 	border: 1px solid $colorRojo;
 	width: 95%;
-
 }
+
 .card-body{
 	font-family: $font-wo;
 	font-weight: $font-wo-regular;
@@ -263,7 +252,6 @@
 			border: 1px solid $colorBlanco;
 		}
 	}
-
 }
 
 .botonNoticias{
@@ -279,7 +267,6 @@
 
 
 /*NOSOTROS INDEX*/ 
-
 #nosotros{
 	width: 100%;
 	h3{
@@ -292,24 +279,24 @@
 	height: 350px;
 	text-align: center;
 	border: 2px solid $colorVerde;
-
-		i{
-			margin-top:0.75em;
-			font-size: $grande;
-		}
-		h5{
-			font-family: $font-am;
-			font-weight: $font-am-bold;
-			margin:0.5em;
-			font-size: $grande;
-		}
-		p{
-			padding: 0.5em 0.5em;
-			line-height: 1.6;
-			text-align: justify;
-		}
+	i{
+		margin-top:0.75em;
+		font-size: $grande;
+	}
+	h5{
+		font-family: $font-am;
+		font-weight: $font-am-bold;
+		margin:0.5em;
+		font-size: $grande;
+	}
+	p{
+		padding: 0.5em 0.5em;
+		line-height: 1.6;
+		text-align: justify;
+	}
 }
 
+/*CARRUSEL DE OPINIONES DEL INDEX*/
 #carouselExampleCaptions{
 	margin: 4em 0;
 	height: 200px;
@@ -317,12 +304,12 @@
 		background-color: $colorRosaClaro;
 	}
 	.carousel-item{
-	img{
-		width:100px;
-		height: 100px;
-		margin-top: 4em;
-		filter: opacity(0%);
-	}
+		img{
+			width:100px;
+			height: 100px;
+			margin-top: 4em;
+			filter: opacity(0%);
+		}
 		h5{
 			margin-top: 1em;
 			font-family:$font-wo;
@@ -344,9 +331,7 @@
 }
 
 
-
-/*FOOTER INDEX*/
-
+/*FOOTER DEL INDEX*/
 footer{
 	width: 100%;
 	background-color: $colorRosaClaro;
@@ -367,7 +352,6 @@ footer{
 		display: inline-block;
 		width: 20px;
 	}
-
 	p{
 		margin-right: 1em;
 		line-height:0.5;
@@ -379,11 +363,10 @@ footer{
 			}
 		}	
 	}
-	.redesSociales img {
+	.redesSociales img{
 		width: 20px;
-		margin:0 0.5em;
+		margin:0 1em;
 	}
-
 }
 
 
@@ -400,10 +383,7 @@ footer{
 }
 
 
-
-
-
-
+/*CONFIGURACIÓN DE LAS "H"*/
 h2{
 	color: $colorVioleta;
 	font-family: $font-am;

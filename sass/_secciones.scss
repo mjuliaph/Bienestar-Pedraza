@@ -1,5 +1,4 @@
 /*HEADER DE LAS SECCIONES*/
-
 .headerSecciones{
 	width: 100%;
 	height: 100%;
@@ -7,20 +6,19 @@
 	&.conBordeSec{
 		border-right: 2px solid $colorNegro;		
 	}
-		h1{
-			font-family: $font-am;
-			font-weight: $font-am-bold;
-			font-size: 2.25rem;
-			text-align: center;
-			margin-top: 1em;
-		}
+	h1{
+		font-family: $font-am;
+		font-weight: $font-am-bold;
+		font-size: 2.25rem;
+		text-align: center;
+		margin-top: 1em;
+	}
 }
 
 .containerSecciones{
 	margin-top: 1em;
 	position: sticky;
 	top: 1em;
-
 
 	#navSecciones {
 		height: 100%;
@@ -32,11 +30,11 @@
 		align-items: space-evenly;
 
 		.logoSecciones{ 
-		width: 100%;
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
+			width: 100%;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
 			img{
 				width: 85px;
 			}
@@ -81,7 +79,6 @@
 }
 
 /*BANNER DE LAS SECCIONES*/
-
 .bannerEntrenamiento{
 	@include bannerSecciones;
 	background-image: url(../media/bannerSeccion-entrenamiento.jpg);
@@ -112,6 +109,14 @@
 }
 
 
+/*CONTENIDO PRINCIPAL DE LAS SECCIONES*/
+.mainSecciones{
+	margin: 0;
+	padding: 0;
+	background-color: $colorBeige;
+	width: 100%;
+	text-align: justify;
+}
 
 .introSecciones{
 	margin: 1em 2em;
@@ -135,6 +140,7 @@
 	}
 }
 
+/*BOTONES DE LAS SECCIONES*/
 .bot1{
 	@include botones;
 	border: 2px solid $colorVerde;
@@ -176,31 +182,6 @@
 	}
 }
 
-
-/*BANNERS PARA LOS TÍTULOS EN VERSIÓN MOBILE*/
-
-.tituloSecciones1{
-@include bannerTitulos;
-}
-
-.tituloSecciones2{
-@include bannerTitulos;
-}
-
-.tituloSecciones3{
-@include bannerTitulos;
-}
-
-
-/*CONTENIDO PRINCIPAL DE LAS SECCIONES*/
-.mainSecciones{
-	margin: 0;
-	padding: 0;
-	background-color: $colorBeige;
-	width: 100%;
-	text-align: justify;
-}
-
 .contenidoSecciones{
 	margin: 1.5em;
 	padding: 1em;
@@ -213,14 +194,15 @@
 		font-size: $no-tan-pequeño;
 	}
 }
+
 .bloqueSecciones{
 	@include contenedorSecciones;
 	img{
-	margin-right: 2em;
+		margin-right: 2em;
 	}
 	ul{
-	list-style-position: inside;
-	list-style-type: square;
+		list-style-position: inside;
+		list-style-type: square;
 	}
 }
 
@@ -229,53 +211,120 @@
 	img{
 		margin-left: 2em;
 	}
-		ul{
-	list-style-position: inside;
-	list-style-type: square;
+	ul{
+		list-style-position: inside;
+		list-style-type: square;
 	}
 }
 
-
-
+/*CONTENIDO DE LA BARRA INFERIOR CON DISTINTAS SECCIONES*/
 .asideSecciones{
 	width: 100%;
 	height: 300px;
 	background-color: $colorRosaClaro;
-		.elementosAside{
-			display: flex;
-			flex-flow: row wrap;
-			justify-content: space-evenly;
-			h3{
-				margin-top: 2em;
-			}
-				img{
-					margin: 0;
-					height: 100px;
-					width: 100px;
-					display:flex;
-					align-self: center;
-				}
-				a{
-					display: flex;
-					flex-direction: row;
-					justify-content: center;
-				}
+	.elementosAside{
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: space-evenly;
+		h3{
+			margin-top: 2em;
 		}
+		img{
+			margin: 0;
+			height: 100px;
+			width: 100px;
+			display:flex;
+			align-self: center;
+		}
+		a{
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
+		}
+	}
+}
+
+/*LISTAS OL DE LAS SECCIONES*/
+ol {
+padding:0 0.5em;
+margin: 0 0.5em;
+list-style-position: inside;
+line-height: 2;
+}
+
+/*PIE DE PÁGINA DE LAS SECCIONES*/
+.piePagina{
+	width: 100%;
+	height: 25vw;
+	padding: 5%;
+	background-image: url('../media/pie.jpg');
+	background-size: 100%;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	object-fit: cover;
+	object-position: center center;
+	opacity: 30%;
+	img{
+		filter: saturate(180%);
+		width: 150px;	
+	}
+}
+
+/*ZÓCALO DE LAS SECCIONES*/
+.zocalo{
+	padding: 1em;
+	background-color: $colorRosaClaro;
+	height: 3em;
+	font-size: 0.75rem;
+	a{
+		text-decoration: none;
+		color: $colorGris;
+		margin-left: 1em;
+		margin-right: 1em;
+	}
+	p{
+		margin-top: 1.5em;
+		color: $colorGris;
+	}
+	img {
+		width: 15px;
+		height: 15px;
+	}
+}
+
+/*FOOTER SECCIONES*/
+.footerSecciones{
+	width: 100%;
+	height: 100%;
+	background-color: $colorCeleste;
+	margin-top: 0px;
+		&.conBorde{
+		border-right: 2px solid $colorNegro;		
+		}
+	img{
+		display: block;
+		margin: 1em 2.5em;
+		width: 30px;
+	}
+	p{
+		text-align: center;
+		font-size: $muy-pequeño;
+		line-height: 1;
+	}
+	button{
+		padding: 0.25em 0.5em;
+		margin-left: 0.25em;
+		background-color: $colorBlanco;
+		border: 2px solid $colorRosa;
+		a{
+			text-decoration: none;
+			color: $colorRosa;
+		}
+	}
 }
 
 
-
-
-
-
-
-
-
-
-
-
 /*SECCION ENTRENAMIENTO*/
-
 .contenedorFuerza{
 	li{
 		list-style: none;
@@ -288,16 +337,39 @@
 }
 
 
+/*SECCIÓN ALIMENTACIÓN*/
+/*TABLA IMC*/
+.table-bordered{
+	margin: 3em 0;
+	text-align: center;
+	border: 2px solid $colorRosaClaro;
+	tbody{
+		border:1px solid $colorRosaClaro;
+	}
+	th{
+		background-color:$colorRosaClaro;
+	}
+	td{
+		border:1px solid $colorRosaClaro;
+	}
+	td{
 
+	}
+}
 
+.container.tablaIMC{
+	line-height: 2;
+	p{
+		margin-bottom: 3em;		
+	}
+
+}
 
 /*SECCIÓN NOTICIAS*/
-
-
 .card-columns{
 	margin: 9em 2em;
 	.card{
-	border: 1px solid $colorRojo;
+		border: 1px solid $colorRojo;
 		&.rosa{
 			border: 1px solid $colorRosa;
 		}
@@ -313,7 +385,7 @@
 }
 
 .noticiasExtendidas{
-		padding: 1.75em;
+	padding: 1.75em;
 	h2{
 		text-align:center;
 	}
@@ -342,159 +414,38 @@
 	margin-top: 0.5em;
 	width: 362px;
 	height: 200px;
-	/*filter: opacity(50%);*/
-
 }
 
 
+/*FORMULARIO DE CONTACTO*/
+.form-group{
+	margin: 2em;
+}
 
+textarea.form-control{
+	resize: none
+}
 
-/*.fotoSec.n1{
+.botonLimpiar{
+	background-color: $colorBlue;
+	margin-right: 0.5em;
 	&:hover{
-		.fotoSec.n2{
-		filter: opacity(75%);
-			}
-		.fotoSec.n3,{
-		filter: opacity(75%);
-		}
-		.fotoSec.n4{
-		filter: opacity(75%);			
-		}
-
+		background-color: $colorBlanco;
+		Border: 1px solid $colorBlue;
+		color: $colorBlue;
 	}
 }
-.fotoSec.n2{
-	&:hover{
-		filter: opacity(75%);
-	}
-}
-.fotoSec.n3{
-	&:hover{
-		filter: opacity(75%);
-	}
-}
-.fotoSec.n4{
-	&:hover{
-		filter: opacity(75%);
-	}
-}
-*/
 
-/*TABLA IMC*/
+.botonEnviar{
+	background-color: $colorVerde;
+	&:hover{
+		background-color: $colorBlanco;
+		Border: 1px solid $colorVerde;
+		color: $colorVerde;
+	}
+}
 
-.table-bordered{
-	margin: 3em 0;
-	text-align: center;
+.form-control{
+	transition: none;
 	border: 2px solid $colorRosaClaro;
-	tbody{
-		border:1px solid $colorRosaClaro;
-	}
-	th{
-		background-color:$colorRosaClaro;
-	}
-	td{
-		border:1px solid $colorRosaClaro;
-	}
-	td{
-
-	}
-}
-
-.container.tablaIMC{
-	line-height: 2;
-	p{
-		margin-bottom: 3em;		
-	}
-
-}
-
-/*
-#ejerciciosFuerza{
-	
-}*/
-
-
-
-ol {
-padding:0 0.5em;
-margin: 0 0.5em;
-list-style-position: inside;
-line-height: 2;
-}
-
-
-
-
-
-
-/*PIE DE PÁGINA DE LAS SECCIONES*/
-.piePagina{
-	width: 100%;
-	height: 25vw;
-	padding: 5%;
-	background-image: url('../media/pie.jpg');
-	background-size: 100%;
-	background-attachment: fixed;
-	background-repeat: no-repeat;
-	object-fit: cover;
-	object-position: center center;
-	opacity: 30%;
-	/*filter: opacity(70%);*/
-	img{
-		filter: saturate(180%);
-		width: 150px;	
-	}
-}
-
-/*ZÓCALO DE LAS SECCIONES*/
-.zocalo{
-	padding: 1em;
-	background-color: $colorRosaClaro;
-	height: 3em;
-	font-size: 0.75rem;
-		a{
-			text-decoration: none;
-			color: $colorGris;
-			margin-left: 1em;
-			margin-right: 1em;
-		}
-		p{
-			margin-top: 1.5em;
-			color: $colorGris;
-		}
-		img {
-			width: 15px;
-			height: 15px;
-		}
-}
-
-/*FOOTER SECCIONES*/
-.footerSecciones{
-	width: 100%;
-	height: 100%;
-	background-color: $colorCeleste;
-	margin-top: 0px;
-		&.conBorde{
-		border-right: 2px solid $colorNegro;		
-	}
-		img{
-			display: block;
-			margin: 1em 2.5em;
-			width: 30px;
-		}
-		p{
-			text-align: center;
-			font-size: $muy-pequeño;
-			line-height: 1;
-		}
-		button{
-			padding: 0.25em 0.5em;
-			margin-left: 0.25em;
-			background-color: $colorBlanco;
-			border: 2px solid $colorRosa;
-			a{
-				text-decoration: none;
-				color: $colorRosa;
-			}
-		}
 }

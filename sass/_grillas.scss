@@ -51,6 +51,8 @@ footer{
 	justify-items: center;
 }
 
+/*MEDIA QUERIES GILLAS*/
+
 @media all and (max-width: 1199.98px){
 	#grillaIndex{
 	display: grid;
@@ -58,13 +60,12 @@ footer{
 	"header"
 	"main"
 	"aside"
-	"noticias"
 	"nosotros"
 	"footer"
 	;
 	grid-template-columns: auto;
 	grid-column-gap: 5px;
-	grid-template-rows: auto auto auto auto auto auto;
+	grid-template-rows: auto auto auto auto auto;
 	grid-row-gap: 10px;
 	}
 }

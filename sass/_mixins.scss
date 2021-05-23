@@ -1,16 +1,7 @@
 
-/*INDEX*/
+/*MIXIN INDEX*/
 
-@mixin barraLateralIndex{
-	width: auto;
-	margin-right: 1em;
-	margin-top: 1.25em;
-	border-radius: 2px 2px 2px 2px;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	border: 1px solid $colorVioleta;
-}
+/*CONTENIDO PRINCIPAL*/
 
 @mixin seccionesIndex{
 	width: 100%;
@@ -42,8 +33,84 @@
 	font-size: $pequeño;
 }
 
+/*CONTENIDO LATERAL*/
 
-/*MIXIN INDEX RESPONSIVE*/
+@mixin barraLateralIndex{
+	width: auto;
+	margin-right: 1em;
+	margin-top: 1.25em;
+	border-radius: 2px 2px 2px 2px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	border: 1px solid $colorVioleta;
+}
+
+
+/*MIXIN SECCIONES*/
+
+/*BANNER DE CADA SECCIÓN*/
+
+@mixin bannerSecciones {
+	margin-bottom: 1em;
+	width: 100%;
+	height: 300px;
+	object-fit: cover;
+	object-position: center center;
+	overflow: hidden;
+	h3{
+		color: $colorBlanco;
+		font-size: $muy-grande;
+		line-height: 4;
+		text-shadow: 2px 2px 2px #840296;
+	}
+}
+
+@mixin bannerTitulos{
+	margin: 0.5em 0;
+	text-shadow: 1px 1px 1px #840296;
+}
+
+
+@mixin botones {
+	width: 250px; 
+	height:60px;
+	border-radius: 5px 5px 5px 5px;
+	background-color: $colorBlanco; /*o transparente?*/
+}
+
+
+@mixin contenedorSecciones{
+	margin: 1em 0em;
+	padding: 0.5em 0.5em;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	img{
+		margin: 0.5em 0em;
+		width: 250px; 
+		height:350px;
+		object-fit: cover;
+		object-position: center center;
+		overflow: hidden;
+		border: 1px solid $colorVerde;
+		border-radius: 5px 5px 5px 5px;
+	}			
+	p{
+		text-align: justify;
+	}
+	ul{
+		list-style-position: inside;
+		line-height: 2.5;
+	}
+}
+
+
+
+/*MIXIN MEDIA QUERIES*/
+
+
+/*INDEX - CONTENIDO PRINCIPAL*/
 
 @mixin seccionesIndexMob{
 	width: 100%;
@@ -70,18 +137,11 @@
 	font-size: 0.75Rem;
 }
 
-/*SECCIONES*/
 
-@mixin botones {
-	width: 250px; 
-	height:60px;
-	border-radius: 5px 5px 5px 5px;
-	background-color: $colorBlanco; /*o transparente?*/
-}
+/*SECCIONES - BANNERS*/
 
-
-@mixin bannerSecciones {
-	margin-bottom: 1em;
+@mixin bannerSeccionesSm {
+	margin-bottom: 0.75em;
 	width: 100%;
 	height: 300px;
 	object-fit: cover;
@@ -89,51 +149,19 @@
 	overflow: hidden;
 	h3{
 		color: $colorBlanco;
-		font-size: $muy-grande;
-		line-height: 4;
+		font-size: 3Rem;
+		line-height: 5;
+		text-shadow: 2px 2px 2px #840296;
 	}
-}
-
-@mixin bannerTitulos{
-	margin: 0.5em 0;
-	text-shadow: 1px 1px 1px #840296;
 }
 
 @mixin bannerTitulosSm{
 	margin-top: 0;
 	margin-bottom: 1em;
-	background-size: cover;
+	background-size: center;
+	background-position: bottom;
 	height: 100px;
 	width: 100%;
 	color: $colorBlanco;
 	line-height: 3;
-}
-
-
-@mixin contenedorSecciones{
-	margin: 1em 0em;
-	padding: 0.5em 0.5em;
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	img{
-		margin: 0.5em 0em;
-		width: 250px; 
-		height:350px;
-		object-fit: cover;
-		object-position: center center;
-		overflow: hidden;
-		border: 1px solid $colorVerde;
-		border-radius: 5px 5px 5px 5px;
-	}			
-	p{
-		text-align: justify;
-
-
-	}
-	ul{
-		list-style-position: inside;
-		line-height: 2.5;
-
-	}
 }
